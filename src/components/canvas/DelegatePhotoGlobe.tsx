@@ -75,11 +75,16 @@ export default function DelegatePhotoGlobe({
 
   const [rotY, setRotY] = useState(0);
   const [rotX, setRotX] = useState(12);
+  const [mounted, setMounted] = useState(false);
   const isDragging = useRef(false);
   const dragStart = useRef({ x: 0, y: 0, rotX: 12, rotY: 0 });
   const animRef = useRef<number | null>(null);
   const lastTime = useRef(performance.now());
   const hovered = useRef(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // Build static sphere positions (Fibonacci)
   const basePoints = useMemo(() => fibonacciSphere(CARD_COUNT, RADIUS), []);
@@ -151,6 +156,14 @@ export default function DelegatePhotoGlobe({
   }, [cards, rotX, rotY]);
 
   const SIZE = 520; // container px
+
+  if (!mounted) {
+    return (
+      <div className="relative w-full flex flex-col items-center justify-center py-6 select-none" style={{ minHeight: SIZE }}>
+        <div className="w-[480px] h-[480px] rounded-full bg-gradient-to-tr from-gold/10 via-navy/5 to-gold/8 blur-3xl pointer-events-none" />
+      </div>
+    );
+  }
 
   return (
     <div className="relative w-full flex flex-col items-center justify-center py-6 select-none">
