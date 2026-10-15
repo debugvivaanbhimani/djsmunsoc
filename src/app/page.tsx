@@ -394,6 +394,26 @@ export default function HomePage() {
 
       {/* ── PHOTO MARQUEE RUNNER ─────────────────────────────────────────── */}
       <section className="bg-white py-16 border-b border-slate-200 overflow-hidden relative">
+        <style dangerouslySetInnerHTML={{ __html: `
+          @keyframes marqueeScrollAnimation {
+            0% {
+              transform: translate3d(0, 0, 0);
+            }
+            100% {
+              transform: translate3d(-50%, 0, 0);
+            }
+          }
+          .marquee-active-runner {
+            display: flex !important;
+            width: max-content !important;
+            animation: marqueeScrollAnimation 36s linear infinite !important;
+            will-change: transform;
+          }
+          .marquee-active-runner:hover {
+            animation-play-state: paused !important;
+          }
+        `}} />
+
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
             <div>
@@ -421,7 +441,7 @@ export default function HomePage() {
           <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-white via-white/80 to-transparent z-10" />
           <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-32 bg-gradient-to-l from-white via-white/80 to-transparent z-10" />
 
-          <div className="animate-marquee-track flex gap-5 py-2">
+          <div className="marquee-active-runner flex gap-5 py-2">
             {[...HIGHLIGHT_PHOTOS, ...HIGHLIGHT_PHOTOS].map((item, i) => (
               <div
                 key={i}
