@@ -74,7 +74,6 @@ export default function SecretariatPage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent opacity-60" />
                   <div className="absolute bottom-3 left-4 right-4 text-white">
-                    <div className="font-mono text-[10px] text-gold uppercase tracking-wider">OFFICE OF THE SEC-GEN</div>
                     <div className="font-serif text-xl font-bold">{secGen.name}</div>
                   </div>
                 </div>
@@ -82,15 +81,9 @@ export default function SecretariatPage() {
 
               <div className="md:col-span-8 space-y-5">
                 <div className="space-y-1">
-                  <div className="text-xs font-mono font-bold uppercase tracking-widest text-gold">
-                    {secGen.department}
-                  </div>
                   <h2 className="font-serif text-3xl sm:text-4xl font-bold text-navy">
                     Dispatch from the Secretary-General
                   </h2>
-                  <div className="font-mono text-sm text-slate-500 uppercase font-semibold">
-                    {secGen.role}
-                  </div>
                 </div>
 
                 <blockquote className="font-serif text-lg sm:text-xl text-slate-700 italic border-l-2 border-l-gold pl-4 py-1 leading-snug">
@@ -148,38 +141,13 @@ export default function SecretariatPage() {
                   />
                 </div>
 
-                <div className="p-6 space-y-3 flex-1 flex flex-col justify-between">
-                  <div className="space-y-1">
-                    <div className="flex items-center justify-between text-[11px] font-mono">
-                      <span className="uppercase tracking-wider text-gold font-bold">{member.role}</span>
-                      <span className="text-slate-400 font-semibold">{member.department}</span>
-                    </div>
-                    <h3 className="font-serif text-2xl font-bold text-navy">
-                      {member.name}
-                    </h3>
-                    <p className="text-xs text-slate-600 leading-relaxed font-sans pt-1">
-                      {member.bio}
-                    </p>
-                  </div>
-
-                  <div className="pt-4 border-t border-slate-100 flex items-center justify-between font-mono text-xs">
-                    <a
-                      href={`mailto:${member.email}`}
-                      className="text-slate-500 hover:text-navy flex items-center gap-1.5"
-                    >
-                      <Mail className="w-3.5 h-3.5 text-gold" />
-                      <span className="truncate max-w-[150px]">{member.email}</span>
-                    </a>
-                    <a
-                      href={member.linkedin}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-navy hover:text-gold font-bold inline-flex items-center gap-1"
-                    >
-                      <LinkedInIcon className="w-3.5 h-3.5" />
-                      <span>Profile</span>
-                    </a>
-                  </div>
+                <div className="p-6 space-y-2 flex-1 flex flex-col justify-start bg-white">
+                  <h3 className="font-serif text-2xl font-bold text-navy">
+                    {member.name}
+                  </h3>
+                  <p className="text-xs text-slate-600 leading-relaxed font-sans">
+                    {member.bio}
+                  </p>
                 </div>
               </div>
             ))}
