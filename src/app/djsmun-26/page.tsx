@@ -17,8 +17,8 @@ const COMMITTEES = [
       "Establishment of Demilitarized Verification Regimes in Contested Littoral Corridors",
     ],
     eb: [
-      { role: "President", name: "Executive Board Member" },
-      { role: "Vice-President", name: "Executive Board Member" },
+      { role: "Chairperson", name: "Arya Nyayadhish" },
+      { role: "Vice Chairperson", name: "Avi Jain" },
     ],
     desc: "The preeminent body tasked with global peace and security, operating with instantaneous crisis injections and binding presidential statements.",
     image: "/assets/real/unsc-session-1.jpg",
@@ -34,8 +34,8 @@ const COMMITTEES = [
       "Protecting the Rights of Internally Displaced Persons in Climate-Induced Migration",
     ],
     eb: [
-      { role: "President", name: "Executive Board Member" },
-      { role: "Vice-President", name: "Executive Board Member" },
+      { role: "Chairperson", name: "Divyaansh Singh" },
+      { role: "Vice Chairperson", name: "Pragya Shaw" },
     ],
     desc: "The principal UN body responsible for promoting and protecting human rights globally, evaluating state compliance and humanitarian accountability.",
     image: "/assets/real/delegate-netherlands-unsc.jpg",
@@ -51,8 +51,8 @@ const COMMITTEES = [
       "Addressing Electoral Bond Transparency and Political Finance Reform",
     ],
     eb: [
-      { role: "Chairperson", name: "Executive Board Member" },
-      { role: "Rapporteur", name: "Executive Board Member" },
+      { role: "Chairperson", name: "Anuj Shenoy" },
+      { role: "Vice Chairperson", name: "Rudra Joshi" },
     ],
     desc: "A dynamic Indian parliamentary committee simulating cross-party deliberations, coalition negotiations, and domestic policy resolutions.",
     image: "/assets/real/delegate-iran-unsc.jpg",
@@ -68,8 +68,8 @@ const COMMITTEES = [
       "Combating Gender-Based Violence in Digital Spaces and Social Media Platforms",
     ],
     eb: [
-      { role: "Chairperson", name: "Executive Board Member" },
-      { role: "Vice-Chair", name: "Executive Board Member" },
+      { role: "Chairperson", name: "Rim Patil" },
+      { role: "Vice Chairperson", name: "Avanti Shirkande" },
     ],
     desc: "Dedicated to gender equality and the empowerment of women worldwide, drafting binding resolutions across socio-economic and political domains.",
     image: "/assets/real/unsc-session-2.jpg",
