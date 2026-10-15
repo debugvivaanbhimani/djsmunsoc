@@ -125,18 +125,16 @@ export default function DelegateZonePage() {
         <div className="flex items-center gap-2 pt-2">
           <button
             onClick={() => setActiveTab("guide")}
-            className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-mono text-xs uppercase tracking-wider font-bold transition-all cursor-pointer ${
-              activeTab === "guide" ? "bg-navy text-white shadow-md" : "bg-white border border-slate-200 text-slate-600 hover:border-navy"
-            }`}
+            className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-mono text-xs uppercase tracking-wider font-bold transition-all cursor-pointer ${activeTab === "guide" ? "bg-navy text-white shadow-md" : "bg-white border border-slate-200 text-slate-600 hover:border-navy"
+              }`}
           >
             <BookOpen className="w-4 h-4" />
             Delegate Guide
           </button>
           <button
             onClick={() => setActiveTab("matrix")}
-            className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-mono text-xs uppercase tracking-wider font-bold transition-all cursor-pointer ${
-              activeTab === "matrix" ? "bg-navy text-white shadow-md" : "bg-white border border-slate-200 text-slate-600 hover:border-navy"
-            }`}
+            className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-mono text-xs uppercase tracking-wider font-bold transition-all cursor-pointer ${activeTab === "matrix" ? "bg-navy text-white shadow-md" : "bg-white border border-slate-200 text-slate-600 hover:border-navy"
+              }`}
           >
             <Search className="w-4 h-4" />
             Country Matrix
@@ -157,11 +155,10 @@ export default function DelegateZonePage() {
                   <button
                     key={step.num}
                     onClick={() => setActiveStep(idx)}
-                    className={`w-full text-left p-5 rounded-2xl border transition-all cursor-pointer flex items-center justify-between ${
-                      activeStep === idx
+                    className={`w-full text-left p-5 rounded-2xl border transition-all cursor-pointer flex items-center justify-between ${activeStep === idx
                         ? "bg-navy text-white border-navy shadow-md"
                         : "bg-white text-slate-700 border-slate-200 hover:bg-slate-50"
-                    }`}
+                      }`}
                   >
                     <div className="flex items-center gap-4">
                       <span className={`font-mono text-xs font-bold px-2.5 py-1 rounded-md ${activeStep === idx ? "bg-gold text-navy" : "bg-slate-100 text-slate-600"}`}>
@@ -178,7 +175,7 @@ export default function DelegateZonePage() {
                   <p className="text-xs text-slate-600 leading-relaxed">Includes sample position papers, resolution templates, and motion quick-reference cards.</p>
                   <a
                     href="#"
-                    onClick={(e) => { e.preventDefault(); alert("Official DJS MUNSoc Delegate Handbook will be dispatched upon conference registration."); }}
+                    onClick={(e) => { e.preventDefault(); alert("Official DJS MUNSOC Delegate Handbook will be dispatched upon conference registration."); }}
                     className="inline-flex items-center gap-2 text-xs font-mono font-bold text-navy hover:text-gold uppercase tracking-wider"
                   >
                     <Download className="w-3.5 h-3.5 text-gold" />
@@ -271,9 +268,8 @@ export default function DelegateZonePage() {
                   <button
                     key={c}
                     onClick={() => setFilterComm(c)}
-                    className={`rounded-lg px-4 py-1.5 font-mono text-xs uppercase tracking-wider transition-all cursor-pointer font-bold ${
-                      filterComm === c ? "bg-navy text-white shadow-xs" : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-                    }`}
+                    className={`rounded-lg px-4 py-1.5 font-mono text-xs uppercase tracking-wider transition-all cursor-pointer font-bold ${filterComm === c ? "bg-navy text-white shadow-xs" : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                      }`}
                   >
                     {c}
                   </button>
@@ -301,11 +297,10 @@ export default function DelegateZonePage() {
                         <td className="py-3.5 px-5 font-semibold text-slate-800">{p.country}</td>
                         <td className="py-3.5 px-5 font-mono text-xs text-slate-500 uppercase">{p.level}</td>
                         <td className="py-3.5 px-5">
-                          <span className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 font-mono text-xs font-bold ${
-                            p.status === "Available"
+                          <span className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 font-mono text-xs font-bold ${p.status === "Available"
                               ? "bg-emerald-50 border border-emerald-200 text-emerald-700"
                               : "bg-slate-100 border border-slate-200 text-slate-500"
-                          }`}>
+                            }`}>
                             {p.status === "Available" ? (
                               <CheckCircle className="w-3 h-3" />
                             ) : (

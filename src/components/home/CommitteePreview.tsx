@@ -55,11 +55,10 @@ export default function CommitteePreview() {
             <button
               key={f}
               onClick={() => setActiveFilter(f)}
-              className={`rounded-full px-5 py-2 text-xs font-mono uppercase tracking-wider transition-all duration-200 cursor-pointer ${
-                activeFilter === f
+              className={`rounded-full px-5 py-2 text-xs font-mono uppercase tracking-wider transition-all duration-200 cursor-pointer ${activeFilter === f
                   ? "bg-gold text-navy font-bold shadow-md shadow-gold/20"
                   : "bg-white/5 border border-white/15 text-cream/80 hover:bg-white/10 hover:border-white/30"
-              }`}
+                }`}
             >
               {f}
             </button>

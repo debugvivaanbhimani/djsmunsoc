@@ -95,7 +95,7 @@ const HIGHLIGHT_PHOTOS = [
   { img: "/assets/real/delegate-netherlands-unsc.jpg", caption: "Delegates drafting clauses and working papers", title: "Multilateral Negotiations" },
   { img: "/assets/real/best-delegate-gavel.jpg", caption: "Individual gavel presentation ceremony", title: "Best Delegate Gavel" },
   { img: "/assets/real/organizing-committee.jpg", caption: "Student organizers managing summit operations", title: "Organizing Committee" },
-  { img: "/assets/real/secretariat-team.jpg", caption: "The central governing secretariat of DJS MUNSoc", title: "Executive Secretariat" },
+  { img: "/assets/real/secretariat-team.jpg", caption: "The central governing secretariat of DJS MUNSOC", title: "Executive Secretariat" },
   { img: "/assets/real/best-delegate-faculty.jpg", caption: "Faculty advisors and institutional leadership", title: "Faculty Mentorship" },
   { img: "/assets/real/unsc-session-2.jpg", caption: "Emergency directive deliberations in committee", title: "Chamber Interventions" },
 ];
@@ -132,7 +132,7 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Text Block — Order 2 on mobile (below globe), Order 1 on laptop (left) */}
           <div className="order-2 lg:order-1 lg:col-span-6 space-y-6">
-            <h1 className="font-syne text-6xl sm:text-7xl md:text-8xl lg:text-[5.5rem] xl:text-[6.5rem] font-extrabold text-navy tracking-[-0.035em] leading-[0.92]">
+            <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-navy leading-[1.08]">
               Debate. <br />
               <span className="text-gold">Dissent.</span> <br />
               Discussion.
@@ -266,12 +266,9 @@ export default function HomePage() {
                   <Trophy className="w-8 h-8" />
                 </div>
 
-                <div className="space-y-2">
-                  <div className="font-mono text-xs font-bold uppercase tracking-widest text-gold">
-                    YOUR COMMITTEE MATCH · {recommendation?.level}
-                  </div>
-                  <h3 className="font-serif text-4xl sm:text-5xl font-bold text-navy">{recommendation?.code}</h3>
-                  <div className="font-mono text-sm text-slate-600 uppercase font-semibold">{recommendation?.name}</div>
+                <div className="space-y-1.5">
+                  <h3 className="font-serif text-4xl sm:text-5xl font-bold text-navy tracking-tight">{recommendation?.code}</h3>
+                  <div className="font-mono text-sm text-slate-700 uppercase font-semibold">{recommendation?.name}</div>
                 </div>
 
                 <p className="text-base text-slate-600 max-w-xl mx-auto leading-relaxed">{recommendation?.desc}</p>
@@ -306,7 +303,7 @@ export default function HomePage() {
               Explore the Platform
             </h2>
             <p className="text-sm text-slate-600">
-              Navigate across all sections of the DJS MUNSoc website.
+              Navigate across all sections of the DJS MUNSOC website.
             </p>
           </div>
 
@@ -371,10 +368,7 @@ export default function HomePage() {
                 </div>
                 <div className="p-6 bg-white space-y-3 flex-1 flex flex-col justify-between">
                   <div className="space-y-1.5">
-                    <div className="font-mono text-[10px] uppercase tracking-wider text-gold font-bold">
-                      {card.sub}
-                    </div>
-                    <h3 className="font-serif text-2xl font-bold text-navy leading-tight">
+                    <h3 className="font-serif text-2xl sm:text-3xl font-bold text-navy leading-tight group-hover:text-gold transition-colors">
                       {card.label}
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed pt-1">
@@ -417,10 +411,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
             <div>
-              <div className="font-mono text-xs uppercase tracking-wider text-gold font-bold mb-1">
-                DJSMUN '26 · 4TH FLAGSHIP EDITION
-              </div>
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-navy">Conference Highlights</h2>
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-navy tracking-tight">Conference Highlights</h2>
             </div>
             <div className="flex items-center gap-4 text-xs font-mono">
               <span className="text-slate-400 hidden sm:inline">Hover to pause · Click to inspect</span>

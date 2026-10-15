@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Newsreader, JetBrains_Mono, Syne, Cinzel } from "next/font/google";
+import { Inter, Newsreader, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/common/Navigation";
 import Footer from "@/components/common/Footer";
@@ -26,26 +26,12 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const syne = Syne({
-  variable: "--font-syne",
-  subsets: ["latin"],
-  weight: ["700", "800"],
-  display: "swap",
-});
-
-const cinzel = Cinzel({
-  variable: "--font-cinzel",
-  subsets: ["latin"],
-  weight: ["700", "800", "900"],
-  display: "swap",
-});
-
 export const metadata: Metadata = {
-  title: "DJS MUNSoc — Model United Nations Society, DJSCE Mumbai",
+  title: "DJS MUNSOC — Model United Nations Society, DJSCE Mumbai",
   description:
-    "Official website of DJS MUNSoc, Dwarkadas J. Sanghvi College of Engineering. Debate. Dissent. Discussion. Discover DJSMUN '26, Youth Summit 3.0, and substantive committees.",
+    "Official website of DJS MUNSOC, Dwarkadas J. Sanghvi College of Engineering. Debate. Dissent. Discussion. Discover DJSMUN '26, Youth Summit 3.0, and substantive committees.",
   keywords: [
-    "DJS MUNSoc",
+    "DJS MUNSOC",
     "DJSMUN",
     "DJS Youth Summit",
     "Model United Nations",
@@ -72,7 +58,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${newsreader.variable} ${jetbrainsMono.variable} ${syne.variable} ${cinzel.variable} scroll-smooth`}
+      className={`${inter.variable} ${newsreader.variable} ${jetbrainsMono.variable} scroll-smooth`}
     >
       <body className="bg-cream text-slate-800 antialiased min-h-screen selection:bg-gold selection:text-navy flex flex-col justify-between">
         <Navigation />

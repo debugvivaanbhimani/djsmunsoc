@@ -27,7 +27,7 @@ export default function AchievementsPage() {
           Delegation Honors Ledger
         </h1>
         <p className="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed">
-          A verified chronological record of delegations fielded by DJS MUNSoc across India's premier collegiate circuits, securing Best Delegation trophies and individual gavels.
+          A verified chronological record of delegations fielded by DJS MUNSOC across India's premier collegiate circuits, securing Best Delegation trophies and individual gavels.
         </p>
 
         {/* Highlight Stats */}
@@ -69,7 +69,7 @@ export default function AchievementsPage() {
               <div className="relative h-72 sm:h-96 w-full bg-slate-100 overflow-hidden">
                 <Image
                   src="/assets/real/delegation-winners.jpg"
-                  alt="DJS MUNSoc Best Delegation Winners"
+                  alt="DJS MUNSOC Best Delegation Winners"
                   fill
                   unoptimized
                   className="object-cover transition-transform duration-700 group-hover:scale-103"

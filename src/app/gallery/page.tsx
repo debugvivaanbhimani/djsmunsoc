@@ -37,7 +37,7 @@ export default function GalleryPage() {
           Conference Retrospective & Gallery
         </h1>
         <p className="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed">
-          Documenting relentless debate, midnight crisis directives, diplomatic alliances, and valedictory honors across DJS MUNSoc editions.
+          Documenting relentless debate, midnight crisis directives, diplomatic alliances, and valedictory honors across DJS MUNSOC editions.
         </p>
       </div>
 
@@ -80,10 +80,7 @@ export default function GalleryPage() {
 
               <div className="p-5 bg-white space-y-2 flex-1 flex flex-col justify-between">
                 <div className="space-y-1">
-                  <div className="font-mono text-[10px] uppercase tracking-wider text-gold font-bold">
-                    {item.tag}
-                  </div>
-                  <h3 className="font-serif text-lg font-bold text-navy leading-snug line-clamp-1">
+                  <h3 className="font-serif text-xl font-bold text-navy leading-snug line-clamp-1">
                     {item.title}
                   </h3>
                   <p className="text-xs text-slate-600 line-clamp-2 pt-0.5">
@@ -102,9 +99,6 @@ export default function GalleryPage() {
         {/* Cinematic Aftermovie Section */}
         <div className="card-clean p-8 sm:p-14 bg-navy text-white border-none shadow-xl space-y-6">
           <div className="max-w-2xl space-y-3">
-            <div className="font-mono text-xs uppercase tracking-widest text-gold font-bold">
-              OFFICIAL CINEMATIC AFTERMOVIE
-            </div>
             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
               "The gavel falls, the order speaks."
             </h2>

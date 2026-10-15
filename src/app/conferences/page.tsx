@@ -138,11 +138,10 @@ function EventDetails({
 }) {
   return (
     <div className="space-y-4 flex flex-col justify-center">
-      <div className="flex items-center gap-3 font-mono text-xs font-bold">
-        <span className="text-gold uppercase tracking-wider">{conf.edition}</span>
-        {conf.status && (
+      {conf.status && (
+        <div>
           <span
-            className={`px-2.5 py-0.5 rounded-md text-[10px] font-bold ${
+            className={`px-2.5 py-0.5 rounded-md text-[10px] font-mono font-bold tracking-wider uppercase ${
               conf.status === "CONCLUDED"
                 ? "bg-slate-100 text-slate-600 border border-slate-200"
                 : "bg-emerald-50 text-emerald-700 border border-emerald-200"
@@ -150,15 +149,15 @@ function EventDetails({
           >
             {conf.status}
           </span>
-        )}
-      </div>
+        </div>
+      )}
 
       <div>
-        <h3 className="font-serif text-3xl sm:text-4xl font-bold text-navy tracking-tight leading-tight">
+        <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-navy tracking-tight leading-tight">
           {conf.title}
         </h3>
         {conf.subtitle && (
-          <p className="font-serif text-lg text-gold italic font-medium mt-1">
+          <p className="font-serif text-lg text-slate-600 italic font-medium mt-1">
             "{conf.subtitle}"
           </p>
         )}
@@ -229,7 +228,7 @@ export default function ConferencesPage() {
           Conferences & Summits
         </h1>
         <p className="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed">
-          Trace the evolution of DJS MUNSoc through our flagship annual editions and bilateral youth conclaves since 2022. Scroll down to explore each historical milestone.
+          Trace the evolution of DJS MUNSOC through our flagship annual editions and bilateral youth conclaves since 2022. Scroll down to explore each historical milestone.
         </p>
       </div>
 

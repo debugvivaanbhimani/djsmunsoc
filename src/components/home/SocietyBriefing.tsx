@@ -21,7 +21,7 @@ export default function SocietyBriefing() {
             </h2>
 
             <p className="text-base text-slate-600 leading-relaxed font-sans">
-              Founded in 2013 at Dwarkadas J. Sanghvi College of Engineering, DJS MUNSoc has evolved into one of India's most intellectually rigorous collegiate societies. We convene orators, debaters, and future diplomats to dissect global crises through the prism of international law and realpolitik.
+              Founded in 2013 at Dwarkadas J. Sanghvi College of Engineering, DJS MUNSOC has evolved into one of India's most intellectually rigorous collegiate societies. We convene orators, debaters, and future diplomats to dissect global crises through the prism of international law and realpolitik.
             </p>
 
             <div className="pt-2 flex flex-wrap gap-4">
@@ -123,7 +123,7 @@ export default function SocietyBriefing() {
               <div className="relative h-60 w-full bg-slate-100 overflow-hidden">
                 <Image
                   src="/assets/real/secretariat-team.jpg"
-                  alt="DJS MUNSoc Secretariat Board"
+                  alt="DJS MUNSOC Secretariat Board"
                   fill
                   unoptimized
                   className="object-cover transition-transform duration-500 group-hover:scale-105"

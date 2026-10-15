@@ -170,7 +170,7 @@ export default function DelegateGuidePage() {
                 href="#download"
                 onClick={(e) => {
                   e.preventDefault();
-                  alert("Official DJS MUNSoc Delegate Handbook 2026 will be dispatched to your email upon conference registration.");
+                  alert("Official DJS MUNSOC Delegate Handbook 2026 will be dispatched to your email upon conference registration.");
                 }}
                 className="inline-flex items-center gap-2 text-xs font-mono font-bold text-navy hover:text-gold uppercase tracking-wider"
               >

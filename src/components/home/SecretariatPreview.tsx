@@ -30,7 +30,7 @@ export default function SecretariatPreview() {
               05 — EXECUTIVE SECRETARIAT
             </div>
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-ivory tracking-tight">
-              The Directorate of DJS MUNSoc.
+              The Directorate of DJS MUNSOC.
             </h2>
           </div>
 

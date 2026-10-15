@@ -22,7 +22,7 @@ export default function PartnersMarquee() {
           href="/contact"
           className="inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-widest text-smoke hover:text-gold transition-colors"
         >
-          <span>Partner with DJS MUNSoc</span>
+          <span>Partner with DJS MUNSOC</span>
           <ArrowUpRight className="w-3.5 h-3.5" />
         </Link>
       </div>

@@ -23,7 +23,7 @@ export default function HorizontalConferences() {
             A forum for substantive dialogue.
           </h2>
           <p className="text-base text-slate leading-relaxed">
-            DJS MUNSoc convenes collegiate and school delegates from across India for rigorous committee proceedings, considered negotiation, and memorable diplomatic exchanges.
+            DJS MUNSOC convenes collegiate and school delegates from across India for rigorous committee proceedings, considered negotiation, and memorable diplomatic exchanges.
           </p>
         </div>
 

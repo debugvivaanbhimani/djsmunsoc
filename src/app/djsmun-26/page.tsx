@@ -102,13 +102,12 @@ function CommitteeFlipCard({ comm }: { comm: typeof COMMITTEES[0] }) {
 
           <div className="p-6 bg-white space-y-3 flex-1 flex flex-col justify-between">
             <div className="space-y-1.5">
-              <div className="flex items-center justify-between text-[11px] font-mono">
-                <span className="text-gold font-bold uppercase tracking-wider">{comm.level}</span>
-                <span className="text-slate-400 font-bold flex items-center gap-1">
-                  TAP TO FLIP <RotateCw className="w-3 h-3 text-gold" />
+              <div className="flex items-center justify-end text-[10px] font-mono text-slate-400 font-bold">
+                <span className="flex items-center gap-1">
+                  TAP TO FLIP <RotateCw className="w-3 h-3 text-slate-400" />
                 </span>
               </div>
-              <h3 className="font-serif text-3xl font-bold text-navy tracking-tight">{comm.code}</h3>
+              <h3 className="font-serif text-3xl sm:text-4xl font-bold text-navy tracking-tight">{comm.code}</h3>
               <p className="font-mono text-xs uppercase tracking-wider text-slate-700 font-semibold">{comm.fullName}</p>
               <p className="text-xs text-slate-600 leading-relaxed line-clamp-2 pt-1">{comm.desc}</p>
             </div>
@@ -171,51 +170,66 @@ function CommitteeFlipCard({ comm }: { comm: typeof COMMITTEES[0] }) {
 export default function DJSMUN26Page() {
   return (
     <div className="bg-cream min-h-screen pt-24 pb-24 text-slate-800">
-      {/* Hero Banner — Conference Concluded */}
-      <div className="relative overflow-hidden">
-        <div className="relative h-[480px] sm:h-[560px]">
+      {/* Hero Banner — Conference Concluded with Official Cover Page */}
+      <div className="relative overflow-hidden bg-navy text-white py-14 sm:py-20 border-b border-gold/30">
+        <div className="absolute inset-0 z-0 opacity-20">
           <Image
-            src="/assets/real/secretariat-team.jpg"
-            alt="DJSMUN 2026"
+            src="/assets/real/djsmun26-cover.png"
+            alt="DJSMUN '26 Ambient Cover"
             fill
             unoptimized
-            className="object-cover"
+            className="object-cover blur-xl scale-110"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/80 to-navy/40" />
-          <div className="absolute inset-0 flex items-center">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
-              <div className="max-w-2xl space-y-5">
-                <div className="flex items-center gap-3 font-mono text-xs font-bold text-gold">
-                  <span>CONCLUDED</span>
-                  <span>·</span>
-                  <span>4TH FLAGSHIP EDITION</span>
-                </div>
+          <div className="absolute inset-0 bg-navy/90" />
+        </div>
 
-                <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold text-white tracking-tight leading-[1.05]">
-                  DJSMUN '26
-                </h1>
-                <p className="font-serif text-xl sm:text-2xl text-gold italic font-medium">
-                  "Navigating the Multipolar Order"
-                </p>
-                <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-                  The 4th flagship edition of DJSMUN, hosted at Dwarkadas J. Sanghvi College of Engineering, brought together delegates from across India for two days of high-intensity debate, coalition-building, and diplomatic resolution.
-                </p>
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          {/* Left Details */}
+          <div className="lg:col-span-7 space-y-5">
+            <div className="flex items-center gap-3 font-mono text-xs font-bold text-gold">
+              <span>CONCLUDED</span>
+              <span>·</span>
+              <span>4TH FLAGSHIP EDITION</span>
+            </div>
 
-                <div className="flex flex-wrap items-center gap-6 font-mono text-xs text-white/70 pt-2">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4 text-gold shrink-0" />
-                    <span>3rd – 4th October 2026</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-gold shrink-0" />
-                    <span>DJSCE Campus, Vile Parle, Mumbai</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Users className="w-4 h-4 text-gold shrink-0" />
-                    <span>4 Committees · 100+ Delegates Impacted</span>
-                  </div>
-                </div>
+            <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold text-white tracking-tight leading-[1.05]">
+              DJSMUN '26
+            </h1>
+            <p className="font-serif text-xl sm:text-2xl text-gold italic font-medium">
+              "Navigating the Multipolar Order"
+            </p>
+            <p className="text-sm sm:text-base text-white/85 leading-relaxed font-sans">
+              The 4th flagship edition of DJSMUN, hosted at Dwarkadas J. Sanghvi College of Engineering, brought together delegates from across India for two days of high-intensity debate, coalition-building, and diplomatic resolution.
+            </p>
+
+            <div className="flex flex-wrap items-center gap-6 font-mono text-xs text-white/70 pt-2">
+              <div className="flex items-center gap-2">
+                <Calendar className="w-4 h-4 text-gold shrink-0" />
+                <span>3rd – 4th October 2026</span>
               </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-gold shrink-0" />
+                <span>DJSCE Campus, Vile Parle, Mumbai</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Users className="w-4 h-4 text-gold shrink-0" />
+                <span>4 Committees · 100+ Delegates Impacted</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Official Cover Page Display */}
+          <div className="lg:col-span-5 flex justify-center lg:justify-end">
+            <div className="relative w-full max-w-[300px] sm:max-w-[340px] aspect-[954/1486] rounded-2xl overflow-hidden border-2 border-gold/40 shadow-2xl group transition-transform duration-300 hover:scale-[1.02]">
+              <Image
+                src="/assets/real/djsmun26-cover.png"
+                alt="Official DJSMUN '26 Cover Page — Times of DJSMUN"
+                fill
+                priority
+                unoptimized
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
           </div>
         </div>
@@ -242,10 +256,7 @@ export default function DJSMUN26Page() {
         {/* Committees Section */}
         <div className="space-y-8">
           <div className="border-b border-slate-200 pb-5">
-            <div className="font-mono text-xs uppercase tracking-wider text-gold font-bold mb-1">
-              THE FOUR COUNCILS
-            </div>
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-navy">
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-navy tracking-tight">
               Simulated Committees at DJSMUN '26
             </h2>
             <p className="text-sm text-slate-600 mt-2 max-w-2xl">
@@ -263,10 +274,7 @@ export default function DJSMUN26Page() {
         {/* Conference Recap Photo Grid */}
         <div className="space-y-8">
           <div className="border-b border-slate-200 pb-5">
-            <div className="font-mono text-xs uppercase tracking-wider text-gold font-bold mb-1">
-              CONFERENCE CAPTURES
-            </div>
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-navy">
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-navy tracking-tight">
               Moments from the Floor
             </h2>
           </div>
@@ -312,10 +320,7 @@ export default function DJSMUN26Page() {
         <div className="card-clean p-8 sm:p-12 overflow-hidden border-l-4 border-l-gold bg-white">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
             <div className="md:col-span-7 space-y-4">
-              <div className="font-mono text-xs uppercase tracking-wider text-gold font-bold">
-                VALEDICTORY & HONORS
-              </div>
-              <h2 className="font-serif text-3xl font-bold text-navy">
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-navy tracking-tight">
                 Best Delegation & Individual Gavels
               </h2>
               <p className="text-sm text-slate-600 leading-relaxed">
@@ -355,10 +360,7 @@ export default function DJSMUN26Page() {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent to-transparent md:bg-gradient-to-r md:from-transparent md:to-white/10" />
             </div>
             <div className="p-8 sm:p-10 space-y-4 flex flex-col justify-center bg-white">
-              <div className="font-mono text-xs uppercase tracking-wider text-gold font-bold">
-                EXECUTIVE LEADERSHIP
-              </div>
-              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-navy">
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-navy tracking-tight">
                 The Secretariat Behind DJSMUN '26
               </h2>
               <p className="text-sm text-slate-600 leading-relaxed">

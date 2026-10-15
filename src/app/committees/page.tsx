@@ -3,9 +3,9 @@ import { Sparkles, Download, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Substantive Committees & Chambers — DJS MUNSoc",
+  title: "Substantive Committees & Chambers — DJS MUNSOC",
   description:
-    "Explore the 7 substantive chambers of DJS MUNSoc: UNSC, UNODC, WTO, ECOSOC, UNICEF, IPC, and DISEC. Access agendas, executive board details, and background guides.",
+    "Explore the 7 substantive chambers of DJS MUNSOC: UNSC, UNODC, WTO, ECOSOC, UNICEF, IPC, and DISEC. Access agendas, executive board details, and background guides.",
 };
 
 export default function CommitteesPage() {

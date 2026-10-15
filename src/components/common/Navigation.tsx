@@ -41,25 +41,20 @@ export default function Navigation() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Brand Logo */}
-        <Link href="/" className="flex items-center gap-3 group shrink-0" title="DJS MUNSoc">
+        <Link href="/" className="flex items-center gap-3 group shrink-0" title="DJS MUNSOC">
           <div className="relative w-10 h-10 sm:w-11 sm:h-11 shrink-0 transition-transform duration-200 group-hover:scale-105">
             <Image
               src="/assets/logo/emblem-navy.png"
-              alt="DJS MUNSoc Emblem"
+              alt="DJS MUNSOC Emblem"
               fill
               priority
               unoptimized
               className="object-contain"
             />
           </div>
-          <div className="flex flex-col">
-            <span className="font-serif text-lg sm:text-xl font-bold tracking-tight text-navy leading-none group-hover:text-gold transition-colors">
-              DJS MUNSoc
-            </span>
-            <span className="font-mono text-[9px] uppercase tracking-[0.18em] text-slate-500 font-semibold leading-tight mt-0.5 hidden sm:block">
-              Dwarkadas J. Sanghvi
-            </span>
-          </div>
+          <span className="font-serif text-xl sm:text-2xl font-bold tracking-tight text-navy group-hover:text-gold transition-colors">
+            DJS MUNSOC
+          </span>
         </Link>
 
         {/* Desktop Navigation */}

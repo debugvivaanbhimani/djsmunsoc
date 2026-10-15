@@ -45,7 +45,7 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-serif text-xl font-bold tracking-tight text-navy leading-none">
-                  DJS MUNSoc
+                  DJS MUNSOC
                 </span>
                 <span className="font-mono text-[9px] uppercase tracking-[0.18em] text-slate-500 font-semibold leading-tight mt-0.5">
                   Dwarkadas J. Sanghvi College of Engineering

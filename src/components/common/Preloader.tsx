@@ -103,7 +103,7 @@ export default function Preloader() {
               transition={{ delay: 0.4 }}
               className="font-serif text-3xl md:text-5xl text-ivory tracking-tight text-center"
             >
-              DJS MUNSoc
+              DJS MUNSOC
             </motion.h1>
 
             <p className="font-mono text-xs uppercase tracking-[0.25em] text-smoke mt-2">
