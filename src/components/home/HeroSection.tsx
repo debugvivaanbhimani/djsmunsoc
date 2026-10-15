@@ -27,7 +27,7 @@ export default function HeroSection() {
           </div>
 
           {/* Monumental Clean Headline */}
-          <h1 className="font-sans font-black text-6xl sm:text-7xl md:text-8xl lg:text-[5.4rem] xl:text-[6.4rem] tracking-[-0.03em] text-navy leading-[0.98]">
+          <h1 className="font-sans font-bold text-6xl sm:text-7xl md:text-8xl lg:text-[5.9rem] xl:text-[7.1rem] tracking-[-0.035em] text-navy leading-[0.96]">
             Debate. <br />
             <span className="text-gold">Dissent.</span> <br />
             Discussion.
