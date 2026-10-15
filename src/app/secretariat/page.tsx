@@ -116,10 +116,7 @@ export default function SecretariatPage() {
 
         {/* Other Directorate Members Grid */}
         <div className="space-y-6">
-          <div className="space-y-1 border-b border-slate-200 pb-4">
-            <div className="font-mono text-xs uppercase tracking-wider text-gold font-bold">
-              DEPARTMENTAL SECRETARIAT
-            </div>
+          <div className="border-b border-slate-200 pb-4">
             <h2 className="font-serif text-3xl font-bold text-navy">
               Executive Directorate
             </h2>
@@ -174,14 +171,6 @@ export default function SecretariatPage() {
               <p className="text-sm text-slate-600 leading-relaxed">
                 The Model United Nations Society operates under the steadfast guidance and mentorship of distinguished faculty members of Dwarkadas J. Sanghvi College of Engineering. Their enduring patronage ensures institutional decorum, ethical stewardship, and academic excellence across all collegiate undertakings.
               </p>
-              <div className="flex flex-wrap gap-3 pt-2 font-mono text-xs text-slate-600">
-                <div className="rounded-lg bg-slate-50 border border-slate-200 px-3.5 py-2">
-                  <span className="text-navy font-bold">Dwarkadas J. Sanghvi College of Engineering</span>
-                </div>
-                <div className="rounded-lg bg-slate-50 border border-slate-200 px-3.5 py-2">
-                  <span className="text-gold font-bold">Vile Parle (West), Mumbai</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
