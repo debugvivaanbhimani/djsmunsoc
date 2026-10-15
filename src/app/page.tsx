@@ -321,7 +321,7 @@ export default function HomePage() {
                 label: "All Conferences",
                 sub: "2022 – 2026 editions",
                 desc: "Full history of DJSMUN flagship editions and Youth Summit conclaves.",
-                img: "/assets/real/organizing-committee.jpg",
+                img: "/assets/real/unsc-session-2.jpg",
               },
               {
                 href: "/secretariat",
