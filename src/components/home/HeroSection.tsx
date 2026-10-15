@@ -27,10 +27,7 @@ export default function HeroSection() {
           </div>
 
           {/* Monumental Clean Headline */}
-          <h1
-            className="font-cinzel font-black text-6xl sm:text-7xl md:text-8xl lg:text-[5.4rem] xl:text-[6.4rem] tracking-[-0.02em] text-navy leading-[0.98]"
-            style={{ fontFamily: 'var(--font-cinzel), "Cinzel", serif', fontWeight: 900 }}
-          >
+          <h1 className="font-sans font-black text-6xl sm:text-7xl md:text-8xl lg:text-[5.4rem] xl:text-[6.4rem] tracking-[-0.03em] text-navy leading-[0.98]">
             Debate. <br />
             <span className="text-gold">Dissent.</span> <br />
             Discussion.

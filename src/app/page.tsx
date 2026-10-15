@@ -132,10 +132,7 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Text Block — Order 2 on mobile (below globe), Order 1 on laptop (left) */}
           <div className="order-2 lg:order-1 lg:col-span-6 space-y-6">
-            <h1
-              className="font-cinzel font-black text-6xl sm:text-7xl md:text-8xl lg:text-[5.4rem] xl:text-[6.4rem] tracking-[-0.02em] text-navy leading-[0.98]"
-              style={{ fontFamily: 'var(--font-cinzel), "Cinzel", serif', fontWeight: 900 }}
-            >
+            <h1 className="font-sans font-black text-6xl sm:text-7xl md:text-8xl lg:text-[5.4rem] xl:text-[6.4rem] tracking-[-0.03em] text-navy leading-[0.98]">
               Debate. <br />
               <span className="text-gold">Dissent.</span> <br />
               Discussion.
