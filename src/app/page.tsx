@@ -87,6 +87,19 @@ const RECOMMENDATIONS: Record<string, { code: string; name: string; level: strin
   },
 };
 
+const HIGHLIGHT_PHOTOS = [
+  { img: "/assets/real/committee-session-1.jpg", caption: "High-intensity unmoderated caucus debate", title: "Committee Proceedings" },
+  { img: "/assets/real/delegation-winners.jpg", caption: "National delegation champions receiving trophies", title: "Best Delegation Champions" },
+  { img: "/assets/real/executive-board-felicitation.jpg", caption: "Executive Board chairs honored at the valedictory", title: "Executive Board Felicitation" },
+  { img: "/assets/real/best-delegate-gavel.jpg", caption: "Individual gavel presentation ceremony", title: "Best Delegate Gavel" },
+  { img: "/assets/real/secretariat-team.jpg", caption: "The central governing secretariat of DJS MUNSoc", title: "Executive Secretariat" },
+  { img: "/assets/real/core-and-associate-team.jpg", caption: "Organizing committee managing summit operations", title: "Organizing Directorate" },
+  { img: "/assets/real/committee-session-2.jpg", caption: "Delegates addressing the General Speakers List", title: "General Speakers List" },
+  { img: "/assets/real/best-delegate-faculty.jpg", caption: "Faculty advisors and institutional leadership", title: "Faculty Mentorship" },
+  { img: "/assets/real/committee-session-3.jpg", caption: "Cross-party consultations and resolution authoring", title: "Resolution Drafting" },
+  { img: "/assets/real/committee-session-4.jpg", caption: "Crisis directive deliberations and emergency updates", title: "Chamber Interventions" },
+];
+
 // ─── COMPONENT ───────────────────────────────────────────────────────────────
 export default function HomePage() {
   const [selectedPhoto, setSelectedPhoto] = useState<any | null>(null);
@@ -379,47 +392,52 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── PHOTO STRIP ──────────────────────────────────────────────────── */}
-      <section className="bg-white py-16 border-b border-slate-200 overflow-hidden">
+      {/* ── PHOTO MARQUEE RUNNER ─────────────────────────────────────────── */}
+      <section className="bg-white py-16 border-b border-slate-200 overflow-hidden relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-8">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
             <div>
-              <div className="font-mono text-xs uppercase tracking-wider text-gold font-bold mb-1">DJSMUN '26 · OCT 3–4, 2026</div>
-              <h2 className="font-serif text-3xl font-bold text-navy">Conference Highlights</h2>
+              <div className="font-mono text-xs uppercase tracking-wider text-gold font-bold mb-1">
+                DJSMUN '26 · 4TH FLAGSHIP EDITION
+              </div>
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-navy">Conference Highlights</h2>
             </div>
-            <Link
-              href="/gallery"
-              className="text-xs font-mono font-bold uppercase tracking-wider text-navy hover:text-gold transition-colors flex items-center gap-1"
-            >
-              Full Gallery <ArrowUpRight className="w-3.5 h-3.5" />
-            </Link>
+            <div className="flex items-center gap-4 text-xs font-mono">
+              <span className="text-slate-400 hidden sm:inline">Hover to pause · Click to inspect</span>
+              <Link
+                href="/gallery"
+                className="font-bold uppercase tracking-wider text-navy hover:text-gold transition-colors flex items-center gap-1"
+              >
+                <span>Full Gallery</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
           </div>
         </div>
 
-        <div className="flex gap-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-x-auto pb-2">
-          {[
-            "/assets/real/committee-session-1.jpg",
-            "/assets/real/delegation-winners.jpg",
-            "/assets/real/executive-board-felicitation.jpg",
-            "/assets/real/best-delegate-gavel.jpg",
-            "/assets/real/secretariat-team.jpg",
-            "/assets/real/core-and-associate-team.jpg",
-          ].map((src, i) => (
-            <Link
-              key={i}
-              href="/gallery"
-              className="relative h-52 w-64 flex-none rounded-2xl overflow-hidden group shadow-md"
-            >
-              <Image
-                src={src}
-                alt={`Conference highlight ${i + 1}`}
-                fill
-                unoptimized
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-navy/20 group-hover:bg-navy/10 transition-colors" />
-            </Link>
-          ))}
+        {/* Infinite Runner Track with Edge Fades */}
+        <div className="relative w-full overflow-hidden">
+          {/* Subtle gradient edge fades */}
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-white via-white/80 to-transparent z-10" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-32 bg-gradient-to-l from-white via-white/80 to-transparent z-10" />
+
+          <div className="animate-marquee-track flex gap-5 py-2">
+            {[...HIGHLIGHT_PHOTOS, ...HIGHLIGHT_PHOTOS].map((item, i) => (
+              <div
+                key={i}
+                onClick={() => setSelectedPhoto({ title: item.title, caption: item.caption, image: item.img })}
+                className="relative w-72 sm:w-80 h-52 flex-none rounded-2xl overflow-hidden cursor-pointer group card-clean border border-slate-200/90 shadow-sm hover:shadow-lg hover:border-gold hover:-translate-y-1 transition-all duration-300"
+              >
+                <Image
+                  src={item.img}
+                  alt={item.title}
+                  fill
+                  unoptimized
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </div>

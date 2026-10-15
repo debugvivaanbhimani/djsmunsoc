@@ -101,3 +101,23 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #C5A059;
 }
+
+/* Infinite Marquee Runner */
+@keyframes marquee-glide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-glide 45s linear infinite;
+}
+
+.animate-marquee-track:hover {
+  animation-play-state: paused;
+}
