@@ -130,8 +130,8 @@ export default function HomePage() {
       <section className="relative w-full bg-cream pt-24 pb-16 border-b border-slate-200 overflow-visible">
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Left */}
-          <div className="lg:col-span-6 space-y-6">
+          {/* Left Text Block — Order 2 on mobile (below globe), Order 1 on laptop (left) */}
+          <div className="order-2 lg:order-1 lg:col-span-6 space-y-6">
             <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold text-navy tracking-tight leading-[1.05]">
               Debate. <br />
               <span className="text-gold italic font-semibold">Dissent.</span> <br />
@@ -177,8 +177,8 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Right — Billboard Globe */}
-          <div className="lg:col-span-6 relative flex items-center justify-center overflow-visible">
+          {/* Right Billboard Globe — Order 1 on mobile (on top), Order 2 on laptop (right) */}
+          <div className="order-1 lg:order-2 lg:col-span-6 relative flex items-center justify-center overflow-visible w-full scale-[0.78] sm:scale-90 md:scale-100 -my-6 sm:my-0">
             <DelegatePhotoGlobe
               photos={galleryData.items}
               onSelectPhoto={(photo) => setSelectedPhoto(photo)}
