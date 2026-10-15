@@ -88,16 +88,16 @@ const RECOMMENDATIONS: Record<string, { code: string; name: string; level: strin
 };
 
 const HIGHLIGHT_PHOTOS = [
-  { img: "/assets/real/committee-session-1.jpg", caption: "High-intensity unmoderated caucus debate", title: "Committee Proceedings" },
+  { img: "/assets/real/unsc-session-1.jpg", caption: "High-intensity unmoderated caucus debate in UNSC", title: "UNSC in Session" },
+  { img: "/assets/real/delegate-iran-unsc-best.jpg", caption: "Delegate of Iran addressing the council floor", title: "Sovereign Floor Speeches" },
   { img: "/assets/real/delegation-winners.jpg", caption: "National delegation champions receiving trophies", title: "Best Delegation Champions" },
   { img: "/assets/real/executive-board-felicitation.jpg", caption: "Executive Board chairs honored at the valedictory", title: "Executive Board Felicitation" },
+  { img: "/assets/real/delegate-netherlands-unsc.jpg", caption: "Delegates drafting clauses and working papers", title: "Multilateral Negotiations" },
   { img: "/assets/real/best-delegate-gavel.jpg", caption: "Individual gavel presentation ceremony", title: "Best Delegate Gavel" },
+  { img: "/assets/real/organizing-committee.jpg", caption: "Student organizers managing summit operations", title: "Organizing Committee" },
   { img: "/assets/real/secretariat-team.jpg", caption: "The central governing secretariat of DJS MUNSoc", title: "Executive Secretariat" },
-  { img: "/assets/real/core-and-associate-team.jpg", caption: "Organizing committee managing summit operations", title: "Organizing Directorate" },
-  { img: "/assets/real/committee-session-2.jpg", caption: "Delegates addressing the General Speakers List", title: "General Speakers List" },
   { img: "/assets/real/best-delegate-faculty.jpg", caption: "Faculty advisors and institutional leadership", title: "Faculty Mentorship" },
-  { img: "/assets/real/committee-session-3.jpg", caption: "Cross-party consultations and resolution authoring", title: "Resolution Drafting" },
-  { img: "/assets/real/committee-session-4.jpg", caption: "Crisis directive deliberations and emergency updates", title: "Chamber Interventions" },
+  { img: "/assets/real/unsc-session-2.jpg", caption: "Emergency directive deliberations in committee", title: "Chamber Interventions" },
 ];
 
 // ─── COMPONENT ───────────────────────────────────────────────────────────────
@@ -317,21 +317,21 @@ export default function HomePage() {
                 label: "DJSMUN '26",
                 sub: "4th Edition · Oct 3–4, 2026",
                 desc: "Conference recap, 4 committee flip cards, photo archive, and honors.",
-                img: "/assets/real/committee-session-1.jpg",
+                img: "/assets/real/unsc-session-1.jpg",
               },
               {
                 href: "/conferences",
                 label: "All Conferences",
                 sub: "2022 – 2026 editions",
                 desc: "Full history of DJSMUN flagship editions and Youth Summit conclaves.",
-                img: "/assets/real/secretariat-team.jpg",
+                img: "/assets/real/organizing-committee.jpg",
               },
               {
                 href: "/secretariat",
                 label: "Secretariat",
                 sub: "Executive Leadership",
                 desc: "Meet the Secretary-General, Director-General, and the organizing team.",
-                img: "/assets/real/director-general.jpg",
+                img: "/assets/real/secretariat-team.jpg",
               },
               {
                 href: "/gallery",
@@ -345,7 +345,7 @@ export default function HomePage() {
                 label: "Delegate Zone",
                 sub: "Guide + Country Matrix",
                 desc: "Starter guide for new delegates and live portfolio allocation matrix.",
-                img: "/assets/real/committee-session-3.jpg",
+                img: "/assets/real/delegate-netherlands-unsc.jpg",
               },
               {
                 href: "/contact",

@@ -21,7 +21,7 @@ const COMMITTEES = [
       { role: "Vice-President", name: "Executive Board Member" },
     ],
     desc: "The preeminent body tasked with global peace and security, operating with instantaneous crisis injections and binding presidential statements.",
-    image: "/assets/real/committee-session-1.jpg",
+    image: "/assets/real/unsc-session-1.jpg",
   },
   {
     id: "unhrc",
@@ -38,7 +38,7 @@ const COMMITTEES = [
       { role: "Vice-President", name: "Executive Board Member" },
     ],
     desc: "The principal UN body responsible for promoting and protecting human rights globally, evaluating state compliance and humanitarian accountability.",
-    image: "/assets/real/committee-session-2.jpg",
+    image: "/assets/real/delegate-netherlands-unsc.jpg",
   },
   {
     id: "aippm",
@@ -55,7 +55,7 @@ const COMMITTEES = [
       { role: "Rapporteur", name: "Executive Board Member" },
     ],
     desc: "A dynamic Indian parliamentary committee simulating cross-party deliberations, coalition negotiations, and domestic policy resolutions.",
-    image: "/assets/real/committee-session-3.jpg",
+    image: "/assets/real/delegate-iran-unsc.jpg",
   },
   {
     id: "unw",
@@ -72,7 +72,7 @@ const COMMITTEES = [
       { role: "Vice-Chair", name: "Executive Board Member" },
     ],
     desc: "Dedicated to gender equality and the empowerment of women worldwide, drafting binding resolutions across socio-economic and political domains.",
-    image: "/assets/real/committee-session-4.jpg",
+    image: "/assets/real/unsc-session-2.jpg",
   },
 ];
 
@@ -273,12 +273,12 @@ export default function DJSMUN26Page() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { img: "/assets/real/committee-session-1.jpg", cap: "Coalition-building during unmoderated caucuses" },
-              { img: "/assets/real/committee-session-2.jpg", cap: "Delegates on the General Speakers List" },
+              { img: "/assets/real/unsc-session-1.jpg", cap: "Coalition-building during unmoderated caucuses in the UNSC" },
+              { img: "/assets/real/delegate-iran-unsc-best.jpg", cap: "Delegate of Iran addressing the chamber from the floor" },
+              { img: "/assets/real/delegate-netherlands-unsc.jpg", cap: "Delegates presenting operative clauses and working papers" },
               { img: "/assets/real/executive-board-felicitation.jpg", cap: "Executive Board Chairs felicitated at valedictory" },
               { img: "/assets/real/delegation-winners.jpg", cap: "Best Delegation champions on stage" },
-              { img: "/assets/real/best-delegate-gavel.jpg", cap: "Individual gavel presentations" },
-              { img: "/assets/real/secretary-general.jpg", cap: "Opening address by the Secretary-General" },
+              { img: "/assets/real/best-delegate-faculty.jpg", cap: "Best Delegate honored alongside faculty advisors" },
             ].map((item, i) => (
               <div key={i} className="card-clean overflow-hidden group">
                 <div className="relative h-60 w-full overflow-hidden bg-slate-100">
@@ -346,7 +346,7 @@ export default function DJSMUN26Page() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
             <div className="relative h-64 md:h-auto min-h-[280px] overflow-hidden">
               <Image
-                src="/assets/real/secretariat-team.jpg"
+                src="/assets/real/organizing-committee.jpg"
                 alt="DJSMUN 2026 Secretariat"
                 fill
                 unoptimized

@@ -1,22 +1,22 @@
 {
   "edition": "DJSMUN '26",
-  "dates": "OCTOBER 30 – NOVEMBER 01, 2026",
+  "dates": "OCTOBER 3 – 4, 2026",
   "stats": {
-    "delegates": 468,
-    "colleges": 38,
-    "committees": 7,
-    "hoursDebated": 28,
-    "resolutionsPassed": 9
+    "delegates": 100,
+    "colleges": 30,
+    "committees": 4,
+    "hoursDebated": 16,
+    "resolutionsPassed": 4
   },
   "items": [
     {
       "id": "g-01",
-      "title": "Secretary-General Address & Formal Gavel Handover",
+      "title": "Secretary-General Address & Gavel Handover",
       "caption": "The Secretary-General striking the opening gavel and addressing the assembled collegiate delegates.",
       "image": "/assets/real/secretary-general.jpg",
       "thumb": "/assets/real/thumbs/secretary-general.jpg",
       "tag": "LEADERSHIP & ADDRESSES",
-      "aspect": "3/2"
+      "aspect": "2/3"
     },
     {
       "id": "g-02",
@@ -39,7 +39,7 @@
     {
       "id": "g-04",
       "title": "Core & Associate Organizing Committee",
-      "caption": "The tireless team of student organizers orchestrating logistics, hospitality, delegate affairs, and technical infrastructure.",
+      "caption": "The student organizers orchestrating logistics, hospitality, delegate affairs, and technical infrastructure.",
       "image": "/assets/real/core-and-associate-team.jpg",
       "thumb": "/assets/real/thumbs/core-and-associate-team.jpg",
       "tag": "SECRETARIAT BOARD",
@@ -47,6 +47,15 @@
     },
     {
       "id": "g-05",
+      "title": "Organizing Committee Conclave",
+      "caption": "Executive committee members and department deputies assembled at DJSCE following the closing plenary.",
+      "image": "/assets/real/organizing-committee.jpg",
+      "thumb": "/assets/real/thumbs/organizing-committee.jpg",
+      "tag": "SECRETARIAT BOARD",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-06",
       "title": "Distinguished Faculty Advisory Board",
       "caption": "Honored faculty advisors and institutional dignitaries from Dwarkadas J. Sanghvi College of Engineering mentoring the society.",
       "image": "/assets/real/faculty-advisors.jpg",
@@ -55,7 +64,97 @@
       "aspect": "3/2"
     },
     {
-      "id": "g-06",
+      "id": "g-07",
+      "title": "United Nations Security Council in Session",
+      "caption": "Delegates in the UN Security Council chamber engaging in moderated caucus debate on maritime security and sovereignty.",
+      "image": "/assets/real/unsc-session-1.jpg",
+      "thumb": "/assets/real/thumbs/unsc-session-1.jpg",
+      "tag": "COMMITTEE PROCEEDINGS",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-08",
+      "title": "UNSC Chamber Deliberations",
+      "caption": "Intense multilateral negotiations and unmoderated caucus discussions inside the Security Council chamber.",
+      "image": "/assets/real/unsc-session-2.jpg",
+      "thumb": "/assets/real/thumbs/unsc-session-2.jpg",
+      "tag": "COMMITTEE PROCEEDINGS",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-09",
+      "title": "Delegate of the Islamic Republic of Iran",
+      "caption": "The Delegate of Iran in the UNSC delivering an impassioned foreign policy defense from the council floor.",
+      "image": "/assets/real/delegate-iran-unsc-best.jpg",
+      "thumb": "/assets/real/thumbs/delegate-iran-unsc-best.jpg",
+      "tag": "COMMITTEE PROCEEDINGS",
+      "aspect": "2/3"
+    },
+    {
+      "id": "g-10",
+      "title": "Floor Address: Delegate of Iran",
+      "caption": "Sovereign policy intervention during the formal General Speakers List at the United Nations Security Council.",
+      "image": "/assets/real/delegate-iran-unsc.jpg",
+      "thumb": "/assets/real/thumbs/delegate-iran-unsc.jpg",
+      "tag": "COMMITTEE PROCEEDINGS",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-11",
+      "title": "Delegate of the Kingdom of the Netherlands",
+      "caption": "The Delegate of the Netherlands raising bilateral motions and presenting draft working papers in UNSC.",
+      "image": "/assets/real/delegate-netherlands-unsc.jpg",
+      "thumb": "/assets/real/thumbs/delegate-netherlands-unsc.jpg",
+      "tag": "COMMITTEE PROCEEDINGS",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-12",
+      "title": "Council Chairperson Adjudicating Debate",
+      "caption": "Chamber Chairperson guiding parliamentary debate, points of order, and procedural voting.",
+      "image": "/assets/real/chairperson.jpg",
+      "thumb": "/assets/real/thumbs/chairperson.jpg",
+      "tag": "EXECUTIVE BOARD",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-13",
+      "title": "Vice Chairperson Directing Speaker Lists",
+      "caption": "Executive Board Vice Chair orchestrating caucus motions, speaking times, and draft directive submissions.",
+      "image": "/assets/real/vice-chairperson.jpg",
+      "thumb": "/assets/real/thumbs/vice-chairperson.jpg",
+      "tag": "EXECUTIVE BOARD",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-14",
+      "title": "Rapporteur & Committee Rosters",
+      "caption": "The Second Vice Chair maintaining official roll-call records, clause submissions, and operative consensus.",
+      "image": "/assets/real/second-vice-chairperson.jpg",
+      "thumb": "/assets/real/thumbs/second-vice-chairperson.jpg",
+      "tag": "EXECUTIVE BOARD",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-15",
+      "title": "Deputy Secretary-General Chamber Inspection",
+      "caption": "The Deputy Secretary-General inspecting substantive rigor and crisis directive delivery across chambers.",
+      "image": "/assets/real/deputy-secretary-general.jpg",
+      "thumb": "/assets/real/thumbs/deputy-secretary-general.jpg",
+      "tag": "LEADERSHIP & ADDRESSES",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-16",
+      "title": "Charge d'Affaires External Affairs",
+      "caption": "Charge d'Affaires coordinating inter-collegiate delegations, VIP dignitaries, and diplomatic hospitality.",
+      "image": "/assets/real/charge-d-affaires.jpg",
+      "thumb": "/assets/real/thumbs/charge-d-affaires.jpg",
+      "tag": "LEADERSHIP & ADDRESSES",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-17",
       "title": "Executive Board & Committee Chairs Felicitation",
       "caption": "Presidents, Chairpersons, and Directors honored on stage for steering substantive debate across councils.",
       "image": "/assets/real/executive-board-felicitation.jpg",
@@ -64,7 +163,16 @@
       "aspect": "3/2"
     },
     {
-      "id": "g-07",
+      "id": "g-18",
+      "title": "Valedictory Felicitation of Council Jurists",
+      "caption": "The Secretariat felicitating the Executive Board for their academic stewardship and rigorous adjudication.",
+      "image": "/assets/real/felicitating-exec-board.jpg",
+      "thumb": "/assets/real/thumbs/felicitating-exec-board.jpg",
+      "tag": "EXECUTIVE BOARD",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-19",
       "title": "Best Delegation National Champions",
       "caption": "Triumphant delegations celebrating on stage with the coveted Best Delegation Trophy and certificates of excellence.",
       "image": "/assets/real/delegation-winners.jpg",
@@ -73,7 +181,7 @@
       "aspect": "3/2"
     },
     {
-      "id": "g-08",
+      "id": "g-20",
       "title": "Best Delegate Gavel Presentation",
       "caption": "Best Delegate gavel presentation celebrating exceptional oratory, diplomacy, and crisis resolution.",
       "image": "/assets/real/best-delegate-gavel.jpg",
@@ -82,57 +190,12 @@
       "aspect": "3/2"
     },
     {
-      "id": "g-09",
+      "id": "g-21",
       "title": "Best Delegate Honored by Faculty Dignitaries",
-      "caption": "Academic and parliamentary excellence recognized alongside esteemed faculty advisors.",
+      "caption": "Academic and parliamentary excellence recognized alongside esteemed faculty advisors from DJSCE.",
       "image": "/assets/real/best-delegate-faculty.jpg",
       "thumb": "/assets/real/thumbs/best-delegate-faculty.jpg",
       "tag": "VALEDICTORY & HONORS",
-      "aspect": "3/2"
-    },
-    {
-      "id": "g-10",
-      "title": "Chamber Deliberations & Delegate Caucusing",
-      "caption": "Delegates engaging in unmoderated caucus negotiations, building coalitions and drafting treaty clauses.",
-      "image": "/assets/real/committee-session-1.jpg",
-      "thumb": "/assets/real/thumbs/committee-session-1.jpg",
-      "tag": "COMMITTEE PROCEEDINGS",
-      "aspect": "3/2"
-    },
-    {
-      "id": "g-11",
-      "title": "Parliamentary Debate & Formal Speeches",
-      "caption": "An envoy delivering an impassioned policy address from the General Speakers List before the assembly.",
-      "image": "/assets/real/committee-session-2.jpg",
-      "thumb": "/assets/real/thumbs/committee-session-2.jpg",
-      "tag": "COMMITTEE PROCEEDINGS",
-      "aspect": "3/2"
-    },
-    {
-      "id": "g-12",
-      "title": "Placard Motion & Committee Floor",
-      "caption": "Delegates raising sovereign placards to introduce motions for moderated caucuses and procedural votes.",
-      "image": "/assets/real/committee-session-3.jpg",
-      "thumb": "/assets/real/thumbs/committee-session-3.jpg",
-      "tag": "COMMITTEE PROCEEDINGS",
-      "aspect": "3/2"
-    },
-    {
-      "id": "g-13",
-      "title": "Resolution Drafting & Multilateral Blocs",
-      "caption": "Sponsors and signatories intensely refining operative clauses during working paper consultations.",
-      "image": "/assets/real/committee-session-4.jpg",
-      "thumb": "/assets/real/thumbs/committee-session-4.jpg",
-      "tag": "COMMITTEE PROCEEDINGS",
-      "aspect": "3/2"
-    },
-    {
-      "id": "g-14",
-      "title": "Council Voting Procedure & Resolution Adoption",
-      "caption": "Substantive roll-call voting procedure concluding with formal adoption of the committee resolution.",
-      "image": "/assets/real/committee-session-5.jpg",
-      "thumb": "/assets/real/thumbs/committee-session-5.jpg",
-      "tag": "COMMITTEE PROCEEDINGS",
       "aspect": "3/2"
     }
   ]

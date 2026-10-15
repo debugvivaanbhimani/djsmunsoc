@@ -19,9 +19,11 @@ import conferencesData from "../../../data/conferences.json";
 const EVENT_GALLERIES: Record<string, string[]> = {
   "djsmun-2026": [
     "/assets/posters/djsmun26-poster.jpg",
-    "/assets/real/committee-session-1.jpg",
+    "/assets/real/unsc-session-1.jpg",
+    "/assets/real/delegate-iran-unsc-best.jpg",
     "/assets/real/delegation-winners.jpg",
-    "/assets/real/secretariat-team.jpg",
+    "/assets/real/organizing-committee.jpg",
+    "/assets/real/best-delegate-faculty.jpg",
   ],
   "youth-summit-3": [
     "/assets/posters/youth-summit-3.jpg",
