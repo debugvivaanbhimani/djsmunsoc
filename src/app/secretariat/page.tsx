@@ -146,16 +146,13 @@ export default function SecretariatPage() {
                     unoptimized
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-transparent opacity-40 group-hover:opacity-20 transition-opacity" />
-                  <div className="absolute top-3 left-3 bg-white/95 px-2.5 py-1 rounded-md text-[10px] font-mono font-bold text-navy shadow-xs">
-                    {member.department}
-                  </div>
                 </div>
 
                 <div className="p-6 space-y-3 flex-1 flex flex-col justify-between">
                   <div className="space-y-1">
-                    <div className="font-mono text-[11px] uppercase tracking-wider text-gold font-bold">
-                      {member.role}
+                    <div className="flex items-center justify-between text-[11px] font-mono">
+                      <span className="uppercase tracking-wider text-gold font-bold">{member.role}</span>
+                      <span className="text-slate-400 font-semibold">{member.department}</span>
                     </div>
                     <h3 className="font-serif text-2xl font-bold text-navy">
                       {member.name}

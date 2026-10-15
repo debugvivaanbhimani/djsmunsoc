@@ -115,7 +115,6 @@ export default function HomePage() {
     <div className="relative w-full">
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="relative w-full bg-cream pt-24 pb-16 border-b border-slate-200 overflow-visible">
-        <div className="absolute inset-0 bg-light-dots opacity-40 pointer-events-none" />
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left */}
@@ -127,7 +126,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-base sm:text-lg text-slate-600 max-w-xl leading-relaxed font-sans">
-              The Model United Nations Society of DJSCE — Western India's most exacting forum for substantive dialogue, geopolitical crisis resolution, and collegiate student leadership.
+              The official Model United Nations Society of Dwarkadas J. Sanghvi College of Engineering, Mumbai.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -152,7 +151,7 @@ export default function HomePage() {
                 <Calendar className="w-5 h-5 text-gold shrink-0 mt-0.5" />
                 <div>
                   <div className="text-xs font-mono uppercase tracking-wider text-navy font-bold">
-                    DJSMUN '26 — 14th Annual Edition
+                    DJSMUN '26 — 4th Flagship Edition
                   </div>
                   <div className="text-xs text-slate-500 mt-0.5">
                     3rd – 4th October 2026 · DJSCE Campus, Mumbai
@@ -182,8 +181,8 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/10">
             {[
-              { val: "14th", label: "Annual Flagship Edition" },
-              { val: "300+", label: "Delegates Convened" },
+              { val: "4th", label: "Flagship Edition" },
+              { val: "100+", label: "Delegates Impacted" },
               { val: "30+", label: "Institutions Represented" },
               { val: "4", label: "Committees in Session" },
             ].map((s) => (
@@ -303,7 +302,7 @@ export default function HomePage() {
               {
                 href: "/djsmun-26",
                 label: "DJSMUN '26",
-                sub: "14th Annual · Oct 3–4, 2026",
+                sub: "4th Edition · Oct 3–4, 2026",
                 desc: "Conference recap, 4 committee flip cards, photo archive, and honors.",
                 img: "/assets/real/committee-session-1.jpg",
               },
@@ -346,9 +345,9 @@ export default function HomePage() {
               <Link
                 key={card.href}
                 href={card.href}
-                className="card-clean overflow-hidden group flex flex-col justify-between hover:border-gold"
+                className="card-clean overflow-hidden group flex flex-col justify-between hover:border-gold transition-all"
               >
-                <div className="relative h-44 w-full overflow-hidden bg-slate-100">
+                <div className="relative h-48 w-full overflow-hidden bg-slate-100">
                   <Image
                     src={card.img}
                     alt={card.label}
@@ -356,15 +355,23 @@ export default function HomePage() {
                     unoptimized
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent opacity-70 group-hover:opacity-40 transition-opacity" />
-                  <div className="absolute bottom-3 left-4 right-4 text-white">
-                    <div className="font-mono text-[9px] uppercase tracking-wider text-gold font-bold">{card.sub}</div>
-                    <h3 className="font-serif text-xl font-bold leading-tight">{card.label}</h3>
-                  </div>
                 </div>
-                <div className="p-5 bg-white flex items-end justify-between gap-3">
-                  <p className="text-xs text-slate-600 leading-relaxed flex-1">{card.desc}</p>
-                  <ArrowUpRight className="w-4 h-4 text-navy group-hover:text-gold shrink-0 transition-colors" />
+                <div className="p-6 bg-white space-y-3 flex-1 flex flex-col justify-between">
+                  <div className="space-y-1.5">
+                    <div className="font-mono text-[10px] uppercase tracking-wider text-gold font-bold">
+                      {card.sub}
+                    </div>
+                    <h3 className="font-serif text-2xl font-bold text-navy leading-tight">
+                      {card.label}
+                    </h3>
+                    <p className="text-xs text-slate-600 leading-relaxed pt-1">
+                      {card.desc}
+                    </p>
+                  </div>
+                  <div className="pt-3 border-t border-slate-100 flex items-center justify-between font-mono text-xs text-navy group-hover:text-gold transition-colors font-bold">
+                    <span>Explore</span>
+                    <ArrowUpRight className="w-4 h-4" />
+                  </div>
                 </div>
               </Link>
             ))}

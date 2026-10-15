@@ -35,7 +35,7 @@ export default function ConferencesPage() {
                 <span className="text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200">
                   FLAGSHIP SIMULATION · CONCLUDED
                 </span>
-                <span className="text-gold font-bold">14TH ANNUAL EDITION</span>
+                <span className="text-gold font-bold">4TH FLAGSHIP EDITION</span>
               </div>
 
               <div>
@@ -48,7 +48,7 @@ export default function ConferencesPage() {
               </div>
 
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans">
-                Hosted on 3rd & 4th October 2026 at the DJSCE Campus, Mumbai. Convening over 300 collegiate delegates across 4 specialized councils with authentic parliamentary crisis directives and unmoderated caucus negotiations.
+                Hosted on 3rd & 4th October 2026 at the DJSCE Campus, Mumbai. Convening over 100 collegiate delegates across 4 specialized councils with authentic parliamentary crisis directives and unmoderated caucus negotiations.
               </p>
 
               {/* Specifications Strip */}
@@ -63,7 +63,7 @@ export default function ConferencesPage() {
                 </div>
                 <div>
                   <div className="text-slate-400 uppercase text-[10px]">DELEGATES</div>
-                  <div className="font-bold text-gold mt-0.5">300+ CONVENED</div>
+                  <div className="font-bold text-gold mt-0.5">100+ IMPACTED</div>
                 </div>
                 <div>
                   <div className="text-slate-400 uppercase text-[10px]">COUNCILS</div>
@@ -91,7 +91,7 @@ export default function ConferencesPage() {
 
             {/* Right Column: Real Photo Preview */}
             <div className="lg:col-span-5 flex justify-center">
-              <div className="relative w-full max-w-md h-[400px] rounded-2xl overflow-hidden border border-slate-200 shadow-xl bg-navy">
+              <div className="relative w-full max-w-md h-[400px] rounded-2xl overflow-hidden border border-slate-200 shadow-xl bg-slate-100">
                 <Image
                   src="/assets/real/secretariat-team.jpg"
                   alt="DJSMUN 2026"
@@ -99,11 +99,6 @@ export default function ConferencesPage() {
                   unoptimized
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent" />
-                <div className="absolute bottom-4 left-5 right-5 text-white">
-                  <div className="font-mono text-[10px] text-gold uppercase tracking-wider font-bold">OCTOBER 3–4, 2026</div>
-                  <div className="font-serif text-lg font-bold">DJSMUN '26 Executive Directorate</div>
-                </div>
               </div>
             </div>
           </div>

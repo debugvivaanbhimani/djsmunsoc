@@ -76,23 +76,22 @@ export default function GalleryPage() {
                   unoptimized
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent opacity-60 group-hover:opacity-30 transition-opacity" />
-                <div className="absolute bottom-3 left-3 right-3 text-white">
-                  <div className="font-mono text-[9px] uppercase tracking-wider text-gold font-bold">
-                    {item.tag}
-                  </div>
-                  <h3 className="font-serif text-lg font-bold leading-tight truncate">
-                    {item.title}
-                  </h3>
-                </div>
               </div>
 
-              <div className="p-4 bg-white space-y-2">
-                <p className="text-xs text-slate-600 line-clamp-2">
-                  {item.caption}
-                </p>
-                <div className="text-[10px] font-mono text-gold font-bold uppercase tracking-wider flex items-center gap-1">
-                  <span>Click to Inspect Full Photo</span>
+              <div className="p-5 bg-white space-y-2 flex-1 flex flex-col justify-between">
+                <div className="space-y-1">
+                  <div className="font-mono text-[10px] uppercase tracking-wider text-gold font-bold">
+                    {item.tag}
+                  </div>
+                  <h3 className="font-serif text-lg font-bold text-navy leading-snug line-clamp-1">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs text-slate-600 line-clamp-2 pt-0.5">
+                    {item.caption}
+                  </p>
+                </div>
+                <div className="pt-2 text-[10px] font-mono text-navy font-bold uppercase tracking-wider flex items-center justify-between group-hover:text-gold transition-colors">
+                  <span>Inspect High-Res Photo</span>
                   <ArrowUpRight className="w-3 h-3" />
                 </div>
               </div>

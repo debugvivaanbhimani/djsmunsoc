@@ -89,21 +89,33 @@ function CommitteeFlipCard({ comm }: { comm: typeof COMMITTEES[0] }) {
         style={{ transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)" }}
       >
         {/* FRONT */}
-        <div className="absolute inset-0 backface-hidden rounded-2xl overflow-hidden shadow-2xl group">
-          <Image src={comm.image} alt={comm.code} fill unoptimized className="object-cover transition-transform duration-500 group-hover:scale-105" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
-
-          <div className="absolute inset-x-0 top-0 p-5 flex items-center justify-between">
-            <span className="text-xs font-mono font-bold text-white/70">{comm.level}</span>
-            <span className="text-[10px] font-mono font-bold text-gold uppercase tracking-wider flex items-center gap-1">
-              TAP TO FLIP <RotateCw className="w-3 h-3" />
-            </span>
+        <div className="absolute inset-0 backface-hidden rounded-2xl overflow-hidden card-clean flex flex-col justify-between group bg-white border border-slate-200">
+          <div className="relative h-56 w-full bg-slate-100 overflow-hidden">
+            <Image
+              src={comm.image}
+              alt={comm.code}
+              fill
+              unoptimized
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+            />
           </div>
 
-          <div className="absolute inset-x-0 bottom-0 p-6 space-y-2">
-            <h3 className="font-serif text-5xl font-bold text-white tracking-tight">{comm.code}</h3>
-            <p className="font-mono text-xs uppercase tracking-wider text-gold">{comm.fullName}</p>
-            <p className="text-xs text-white/70 leading-relaxed line-clamp-2">{comm.desc}</p>
+          <div className="p-6 bg-white space-y-3 flex-1 flex flex-col justify-between">
+            <div className="space-y-1.5">
+              <div className="flex items-center justify-between text-[11px] font-mono">
+                <span className="text-gold font-bold uppercase tracking-wider">{comm.level}</span>
+                <span className="text-slate-400 font-bold flex items-center gap-1">
+                  TAP TO FLIP <RotateCw className="w-3 h-3 text-gold" />
+                </span>
+              </div>
+              <h3 className="font-serif text-3xl font-bold text-navy tracking-tight">{comm.code}</h3>
+              <p className="font-mono text-xs uppercase tracking-wider text-slate-700 font-semibold">{comm.fullName}</p>
+              <p className="text-xs text-slate-600 leading-relaxed line-clamp-2 pt-1">{comm.desc}</p>
+            </div>
+            <div className="pt-3 border-t border-slate-100 text-[11px] font-mono text-navy font-bold uppercase tracking-wider flex items-center justify-between group-hover:text-gold transition-colors">
+              <span>View Agendas & Executive Board</span>
+              <span>→</span>
+            </div>
           </div>
         </div>
 
@@ -176,7 +188,7 @@ export default function DJSMUN26Page() {
                 <div className="flex items-center gap-3 font-mono text-xs font-bold text-gold">
                   <span>CONCLUDED</span>
                   <span>·</span>
-                  <span>14TH ANNUAL EDITION</span>
+                  <span>4TH FLAGSHIP EDITION</span>
                 </div>
 
                 <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold text-white tracking-tight leading-[1.05]">
@@ -186,7 +198,7 @@ export default function DJSMUN26Page() {
                   "Navigating the Multipolar Order"
                 </p>
                 <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-                  The 14th edition of DJSMUN, hosted at Dwarkadas J. Sanghvi College of Engineering, brought together delegates from across India for two days of high-intensity debate, coalition-building, and diplomatic resolution.
+                  The 4th flagship edition of DJSMUN, hosted at Dwarkadas J. Sanghvi College of Engineering, brought together delegates from across India for two days of high-intensity debate, coalition-building, and diplomatic resolution.
                 </p>
 
                 <div className="flex flex-wrap items-center gap-6 font-mono text-xs text-white/70 pt-2">
@@ -200,7 +212,7 @@ export default function DJSMUN26Page() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Users className="w-4 h-4 text-gold shrink-0" />
-                    <span>4 Committees · 300+ Delegates</span>
+                    <span>4 Committees · 100+ Delegates Impacted</span>
                   </div>
                 </div>
               </div>
@@ -213,7 +225,7 @@ export default function DJSMUN26Page() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 -mt-8 relative z-10">
           {[
-            { label: "Delegates", value: "300+" },
+            { label: "Delegates Impacted", value: "100+" },
             { label: "Committees", value: "4" },
             { label: "Colleges", value: "30+" },
             { label: "Days", value: "2" },
@@ -269,7 +281,7 @@ export default function DJSMUN26Page() {
               { img: "/assets/real/secretary-general.jpg", cap: "Opening address by the Secretary-General" },
             ].map((item, i) => (
               <div key={i} className="card-clean overflow-hidden group">
-                <div className="relative h-60 w-full overflow-hidden">
+                <div className="relative h-60 w-full overflow-hidden bg-slate-100">
                   <Image
                     src={item.img}
                     alt={item.cap}
@@ -277,7 +289,6 @@ export default function DJSMUN26Page() {
                     unoptimized
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-transparent opacity-60 group-hover:opacity-30 transition-opacity" />
                 </div>
                 <div className="p-4 bg-white">
                   <p className="text-xs text-slate-600 font-sans">{item.cap}</p>
@@ -326,11 +337,6 @@ export default function DJSMUN26Page() {
                 unoptimized
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />
-              <div className="absolute bottom-3 left-4 right-4 text-white">
-                <div className="font-mono text-[10px] text-gold uppercase tracking-wider font-bold">DJSMUN '26</div>
-                <div className="font-serif text-lg font-bold">National Champions</div>
-              </div>
             </div>
           </div>
         </div>
@@ -356,7 +362,7 @@ export default function DJSMUN26Page() {
                 The Secretariat Behind DJSMUN '26
               </h2>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Orchestrated by a dedicated secretariat team from DJSCE, the 14th edition was brought to life through months of planning, academic research, and institutional coordination.
+                Orchestrated by a dedicated secretariat team from DJSCE, the 4th flagship edition was brought to life through months of planning, academic research, and institutional coordination.
               </p>
               <Link
                 href="/secretariat"

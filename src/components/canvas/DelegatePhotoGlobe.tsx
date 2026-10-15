@@ -224,10 +224,6 @@ export default function DelegatePhotoGlobe({
                   unoptimized
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-transparent opacity-50 group-hover:opacity-20 transition-opacity" />
-                <div className="absolute bottom-1 left-1.5 right-1.5 text-[7px] font-mono font-bold text-gold uppercase tracking-wider truncate">
-                  {card.photo.tag.split(" ")[0]}
-                </div>
               </div>
             </div>
           );
