@@ -51,11 +51,11 @@ export default function Footer() {
                 <span>DJSCE Campus, Vile Parle (W), Mumbai 400056</span>
               </div>
               <a
-                href="mailto:secgen.djsmunsoc@djsce.ac.in"
+                href="mailto:djsmunsoc@gmail.com"
                 className="flex items-center gap-2 text-xs font-mono text-navy hover:text-gold transition-colors font-semibold"
               >
                 <Mail className="w-4 h-4 text-gold shrink-0" />
-                <span>secgen.djsmunsoc@djsce.ac.in</span>
+                <span>djsmunsoc@gmail.com</span>
               </a>
             </div>
           </div>

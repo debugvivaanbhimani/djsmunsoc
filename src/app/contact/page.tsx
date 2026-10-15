@@ -189,20 +189,20 @@ export default function ContactPage() {
                 <div>
                   <div className="text-slate-400 uppercase text-[10px]">SECRETARY-GENERAL</div>
                   <a
-                    href="mailto:secgen.djsmunsoc@djsce.ac.in"
+                    href="mailto:djsmunsoc@gmail.com"
                     className="text-navy font-bold hover:text-gold transition-colors text-sm"
                   >
-                    secgen.djsmunsoc@djsce.ac.in
+                    djsmunsoc@gmail.com
                   </a>
                 </div>
 
                 <div>
                   <div className="text-slate-400 uppercase text-[10px]">DELEGATE AFFAIRS</div>
                   <a
-                    href="mailto:delegates.djsmun@djsce.ac.in"
+                    href="mailto:djsmunsoc@gmail.com"
                     className="text-navy font-bold hover:text-gold transition-colors text-sm"
                   >
-                    delegates.djsmun@djsce.ac.in
+                    djsmunsoc@gmail.com
                   </a>
                 </div>
 
