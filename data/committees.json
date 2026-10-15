@@ -1,0 +1,226 @@
+[
+  {
+    "id": "unsc",
+    "code": "UNSC",
+    "order": "COMMITTEE 01",
+    "name": "United Nations Security Council",
+    "level": "Crisis",
+    "category": "Advanced",
+    "image": "/assets/real/committee-session-1.jpg",
+    "eb": [
+      {
+        "name": "Aarav Mehta [EDIT]",
+        "role": "President"
+      },
+      {
+        "name": "Siddharth Iyer [EDIT]",
+        "role": "Vice-President"
+      }
+    ],
+    "agendas": [
+      {
+        "num": "01",
+        "title": "Evaluating Preemptive Sovereign Military Actions in Non-Contiguous Maritime Zones"
+      },
+      {
+        "num": "02",
+        "title": "Establishment of Demilitarized Verification Regimes in Contested Littoral Corridors"
+      }
+    ],
+    "bgGuideUrl": "/assets/guides/unsc-bg-guide.pdf",
+    "matrixUrl": "#",
+    "description": "The preeminent body tasked with global peace and security, operating with instantaneous crisis injections and binding presidential statements."
+  },
+  {
+    "id": "unodc",
+    "code": "UNODC",
+    "order": "COMMITTEE 02",
+    "name": "United Nations Office on Drugs and Crime",
+    "level": "Intermediate",
+    "category": "Intermediate",
+    "image": "/assets/real/committee-session-2.jpg",
+    "eb": [
+      {
+        "name": "Ananya Sharma [EDIT]",
+        "role": "Chairperson"
+      },
+      {
+        "name": "Rohan Sen [EDIT]",
+        "role": "Vice-Chair"
+      }
+    ],
+    "agendas": [
+      {
+        "num": "01",
+        "title": "Standardising Multilateral Asset Recovery Procedures across Non-Compliant Jurisdictions"
+      },
+      {
+        "num": "02",
+        "title": "Countering the Illicit Diversion of Precursor Pharmaceuticals Containing Controlled Substances"
+      }
+    ],
+    "bgGuideUrl": "/assets/guides/unodc-bg-guide.pdf",
+    "matrixUrl": "#",
+    "description": "Focusing on interdicting synthetic narcotics trafficking vectors and establishing unified judicial extradition mechanisms."
+  },
+  {
+    "id": "wto",
+    "code": "WTO",
+    "order": "COMMITTEE 03",
+    "name": "World Trade Organization",
+    "level": "Intermediate",
+    "category": "Intermediate",
+    "image": "/assets/real/committee-session-3.jpg",
+    "eb": [
+      {
+        "name": "Devansh Kothari [EDIT]",
+        "role": "Director General"
+      },
+      {
+        "name": "Meera Joshi [EDIT]",
+        "role": "Deputy Director"
+      }
+    ],
+    "agendas": [
+      {
+        "num": "01",
+        "title": "Restructuring the Dispute Settlement Body Appellate Mechanism Amid Protectionist Retaliation"
+      },
+      {
+        "num": "02",
+        "title": "Addressing Subsidy Asymmetries and Critical Mineral Supply Monopoly Constraints"
+      }
+    ],
+    "bgGuideUrl": "/assets/guides/wto-bg-guide.pdf",
+    "matrixUrl": "#",
+    "description": "A high-stakes trade battlefield negotiating tariffs, retaliatory embargoes, and sovereign green technology subsidies."
+  },
+  {
+    "id": "ecosoc",
+    "code": "ECOSOC",
+    "order": "COMMITTEE 04",
+    "name": "Economic and Social Council",
+    "level": "Beginner",
+    "category": "Beginner",
+    "image": "/assets/real/committee-session-4.jpg",
+    "eb": [
+      {
+        "name": "Tanvi Shah [EDIT]",
+        "role": "President"
+      },
+      {
+        "name": "Kabir Desai [EDIT]",
+        "role": "Vice-President"
+      }
+    ],
+    "agendas": [
+      {
+        "num": "01",
+        "title": "Sovereign Debt Distress and Restructuring Frameworks for Developing Economies"
+      },
+      {
+        "num": "02",
+        "title": "Mitigating Cross-Border Climate Displacement and Climate-Financed Infrastructure"
+      }
+    ],
+    "bgGuideUrl": "/assets/guides/ecosoc-bg-guide.pdf",
+    "matrixUrl": "#",
+    "description": "A cornerstone assembly addressing macro-economic stabilization, sovereign debt swaps, and equitable humanitarian funding."
+  },
+  {
+    "id": "unicef",
+    "code": "UNICEF",
+    "order": "COMMITTEE 05",
+    "name": "United Nations Children's Fund",
+    "level": "Beginner",
+    "category": "Beginner",
+    "image": "/assets/real/committee-session-5.jpg",
+    "eb": [
+      {
+        "name": "Rhea Merchant [EDIT]",
+        "role": "Chairperson"
+      },
+      {
+        "name": "Aditya Varma [EDIT]",
+        "role": "Rapporteur"
+      }
+    ],
+    "agendas": [
+      {
+        "num": "01",
+        "title": "Safeguarding Minors in Protracted Armed Hostilities and Post-Conflict Demobilisation"
+      },
+      {
+        "num": "02",
+        "title": "Combating Exploitative Digital Labor Networks and Under-Age Trafficking Vectors"
+      }
+    ],
+    "bgGuideUrl": "/assets/guides/unicef-bg-guide.pdf",
+    "matrixUrl": "#",
+    "description": "Dedicated to drafting binding humanitarian protections for vulnerable youth populations across conflict zones."
+  },
+  {
+    "id": "ipc",
+    "code": "IPC",
+    "order": "COMMITTEE 06",
+    "name": "International Press Corps",
+    "level": "Advanced",
+    "category": "Advanced",
+    "image": "/assets/real/executive-board-felicitation.jpg",
+    "eb": [
+      {
+        "name": "Pranav Nair [EDIT]",
+        "role": "Editor-in-Chief"
+      },
+      {
+        "name": "Ishani Parekh [EDIT]",
+        "role": "Senior Bureau Chief"
+      }
+    ],
+    "agendas": [
+      {
+        "num": "01",
+        "title": "Real-time Investigative Journalism, Press Conferences, and Crisis Fact-Checking"
+      },
+      {
+        "num": "02",
+        "title": "Publishing Editorial Exposes and Holding Committee Chairs Accountable"
+      }
+    ],
+    "bgGuideUrl": "/assets/guides/ipc-bg-guide.pdf",
+    "matrixUrl": "#",
+    "description": "The Fourth Estate of DJS MUNSoc: delegates act as journalists representing Reuters, Al Jazeera, BBC, and TASS."
+  },
+  {
+    "id": "disec",
+    "code": "DISEC",
+    "order": "COMMITTEE 07",
+    "name": "Disarmament and International Security Committee",
+    "level": "Crisis",
+    "category": "Crisis",
+    "image": "/assets/real/committee-session-1.jpg",
+    "eb": [
+      {
+        "name": "Varun Singhania [EDIT]",
+        "role": "Chairperson"
+      },
+      {
+        "name": "Sanaya Kapoor [EDIT]",
+        "role": "Director"
+      }
+    ],
+    "agendas": [
+      {
+        "num": "01",
+        "title": "Regulating Autonomous Lethal Weapon Systems (LAWS) and AI in Targeted Warfare"
+      },
+      {
+        "num": "02",
+        "title": "Proliferation Risks in Non-Signatory Nuclear Latency States"
+      }
+    ],
+    "bgGuideUrl": "/assets/guides/disec-bg-guide.pdf",
+    "matrixUrl": "#",
+    "description": "The First Committee of the UN General Assembly addressing technological militarization and weapons proliferation."
+  }
+]

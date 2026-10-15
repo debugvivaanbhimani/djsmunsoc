@@ -1,0 +1,10 @@
+{
+  "description": "Connects students nationwide to upcoming Model United Nations conferences with interactive guides, committee quizzes, event details, and easy registration.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

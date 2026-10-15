@@ -1,0 +1,41 @@
+{
+  "partners": [
+    {
+      "name": "UNITED NATIONS INFORMATION CENTRE",
+      "tier": "PATRONAGE [EDIT]",
+      "logo": "/assets/sponsors/unic.svg",
+      "category": "Diplomatic"
+    },
+    {
+      "name": "TRINITY [EDIT]",
+      "tier": "TITLE PARTNER",
+      "logo": "/assets/sponsors/trinity.svg",
+      "category": "Corporate"
+    },
+    {
+      "name": "THE DIPLOMATIC COURIER",
+      "tier": "MEDIA PARTNER",
+      "logo": "/assets/sponsors/courier.svg",
+      "category": "Media"
+    },
+    {
+      "name": "MUKESH PATEL SCHOOL OF TECH",
+      "tier": "VENUE HOST",
+      "logo": "/assets/sponsors/mpstme.svg",
+      "category": "Academic"
+    },
+    {
+      "name": "OXFORD UNIVERSITY PRESS INDIA",
+      "tier": "KNOWLEDGE PARTNER",
+      "logo": "/assets/sponsors/oup.svg",
+      "category": "Academic"
+    },
+    {
+      "name": "INTERNATIONAL LAW OBSERVER",
+      "tier": "RESEARCH PARTNER",
+      "logo": "/assets/sponsors/ilo.svg",
+      "category": "Research"
+    }
+  ],
+  "deckUrl": "/assets/documents/djsmun-partnership-deck.pdf"
+}

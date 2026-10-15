@@ -1,26 +1,103 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-navy: #0B1930;
+  --color-navy-dark: #060E1B;
+  --color-navy-light: #162B4D;
+  --color-gold: #C5A059;
+  --color-gold-light: #DFCA9B;
+  --color-gold-hover: #B38C44;
+  --color-cream: #FAF9F6;
+  --color-cream-subtle: #F3F1EC;
+  --color-cream-card: #FFFFFF;
+  --color-slate-text: #334155;
+  --color-slate-muted: #64748B;
+  --color-border-subtle: #E2E8F0;
+  --color-border-navy: rgba(11, 25, 48, 0.12);
+
+  --font-serif: var(--font-serif), "Cinzel", Georgia, serif;
+  --font-sans: var(--font-sans), "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: var(--font-mono), monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --navy: #0B1930;
+  --gold: #C5A059;
+  --cream: #FAF9F6;
+  --white: #FFFFFF;
+}
+
+/* Base styling: bright, clean, comfortable on the eye */
+html {
+  scroll-behavior: smooth;
+  background-color: #FAF9F6;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FAF9F6;
+  color: #1E293B;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Clean cards & elevated panels */
+.card-clean {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px -2px rgba(11, 25, 48, 0.05);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-clean:hover {
+  border-color: rgba(197, 160, 89, 0.4);
+  box-shadow: 0 12px 30px -4px rgba(11, 25, 48, 0.09);
+  transform: translateY(-2px);
+}
+
+.navy-card {
+  background: #0B1930;
+  color: #FAF9F6;
+  border: 1px solid rgba(197, 160, 89, 0.25);
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px -5px rgba(11, 25, 48, 0.15);
+}
+
+/* Subtle dot motif for hero and section dividers */
+.bg-light-dots {
+  background-image: radial-gradient(rgba(11, 25, 48, 0.07) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-gold-dots {
+  background-image: radial-gradient(rgba(197, 160, 89, 0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* 3D perspective */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F3F1EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
 }

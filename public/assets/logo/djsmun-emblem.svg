@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <!-- Outer concentric hairline ring -->
+  <circle cx="200" cy="200" r="185" stroke="#EDE8DF" stroke-width="1.5" stroke-opacity="0.3"/>
+  <circle cx="200" cy="200" r="175" stroke="#EDE8DF" stroke-width="0.75" stroke-opacity="0.15" stroke-dasharray="3 3"/>
+  
+  <!-- Classic UN Laurel Wreath Leaves (Left) -->
+  <g stroke="#EDE8DF" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M120 290 C85 240, 85 160, 125 105" />
+    <!-- Leaf pairs left -->
+    <path d="M116 270 C100 262, 90 248, 92 232 C104 236, 114 248, 118 262 Z" fill="#EDE8DF" fill-opacity="0.1"/>
+    <path d="M106 230 C90 220, 82 205, 85 190 C98 193, 106 206, 108 222 Z" fill="#EDE8DF" fill-opacity="0.1"/>
+    <path d="M100 190 C86 178, 80 162, 85 146 C97 150, 104 164, 104 180 Z" fill="#EDE8DF" fill-opacity="0.1"/>
+    <path d="M104 150 C92 136, 90 120, 98 106 C108 112, 112 126, 110 142 Z" fill="#EDE8DF" fill-opacity="0.1"/>
+    <path d="M118 114 C110 100, 112 84, 124 72 C132 80, 132 96, 126 110 Z" fill="#EDE8DF" fill-opacity="0.1"/>
+    
+    <!-- Classic UN Laurel Wreath Leaves (Right) -->
+    <path d="M280 290 C315 240, 315 160, 275 105" />
+    <!-- Leaf pairs right -->
+    <path d="M284 270 C300 262, 310 248, 308 232 C296 236, 286 248, 282 262 Z" fill="#EDE8DF" fill-opacity="0.1"/>
+    <path d="M294 230 C310 220, 318 205, 315 190 C302 193, 294 206, 292 222 Z" fill="#EDE8DF" fill-opacity="0.1"/>
+    <path d="M300 190 C314 178, 320 162, 315 146 C303 150, 296 164, 296 180 Z" fill="#EDE8DF" fill-opacity="0.1"/>
+    <path d="M296 150 C308 136, 310 120, 302 106 C292 112, 288 126, 290 142 Z" fill="#EDE8DF" fill-opacity="0.1"/>
+    <path d="M282 114 C290 100, 288 84, 276 72 C268 80, 268 96, 274 110 Z" fill="#EDE8DF" fill-opacity="0.1"/>
+  </g>
+
+  <!-- Central Crest: Open Parchment / Book of Sovereign Law -->
+  <g stroke="#EDE8DF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M200 155 L155 168 C145 171, 140 180, 140 190 L140 245 C140 248, 143 250, 146 249 L200 232 L254 249 C257 250, 260 248, 260 245 L260 190 C260 180, 255 171, 245 168 Z" fill="#EDE8DF" fill-opacity="0.08"/>
+    <path d="M200 155 L200 232"/>
+    <path d="M152 182 L192 170"/>
+    <path d="M152 198 L192 186"/>
+    <path d="M152 214 L192 202"/>
+    <path d="M248 182 L208 170"/>
+    <path d="M248 198 L208 186"/>
+    <path d="M248 214 L208 202"/>
+  </g>
+
+  <!-- Radiant Diplomatic Star / Sun above book -->
+  <g stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round">
+    <line x1="200" y1="120" x2="200" y2="108" />
+    <line x1="200" y1="140" x2="200" y2="148" />
+    <line x1="185" y1="130" x2="173" y2="130" />
+    <line x1="215" y1="130" x2="227" y2="130" />
+    <line x1="189" y1="119" x2="181" y2="111" />
+    <line x1="211" y1="141" x2="219" y2="149" />
+    <line x1="189" y1="141" x2="181" y2="149" />
+    <line x1="211" y1="119" x2="219" y2="111" />
+    <circle cx="200" cy="130" r="4" fill="#C9A96E" />
+  </g>
+
+  <!-- Bottom Arch Ribbon / Pedestal -->
+  <path d="M165 268 C185 272, 215 272, 235 268" stroke="#C9A96E" stroke-width="2" stroke-linecap="round"/>
+</svg>

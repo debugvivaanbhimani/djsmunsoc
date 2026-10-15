@@ -1,0 +1,139 @@
+{
+  "edition": "DJSMUN '26",
+  "dates": "OCTOBER 30 – NOVEMBER 01, 2026",
+  "stats": {
+    "delegates": 468,
+    "colleges": 38,
+    "committees": 7,
+    "hoursDebated": 28,
+    "resolutionsPassed": 9
+  },
+  "items": [
+    {
+      "id": "g-01",
+      "title": "Secretary-General Address & Formal Gavel Handover",
+      "caption": "The Secretary-General striking the opening gavel and addressing the assembled collegiate delegates.",
+      "image": "/assets/real/secretary-general.jpg",
+      "thumb": "/assets/real/thumbs/secretary-general.jpg",
+      "tag": "LEADERSHIP & ADDRESSES",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-02",
+      "title": "Director General Keynote Address",
+      "caption": "The Director General addressing delegates, faculty dignitaries, and executive board members on conference operations and academic decorum.",
+      "image": "/assets/real/director-general.jpg",
+      "thumb": "/assets/real/thumbs/director-general.jpg",
+      "tag": "LEADERSHIP & ADDRESSES",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-03",
+      "title": "The Executive Secretariat Directorate",
+      "caption": "The central governing body and departmental heads of DJS MUNSoc steering conference excellence.",
+      "image": "/assets/real/secretariat-team.jpg",
+      "thumb": "/assets/real/thumbs/secretariat-team.jpg",
+      "tag": "SECRETARIAT BOARD",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-04",
+      "title": "Core & Associate Organizing Committee",
+      "caption": "The tireless team of student organizers orchestrating logistics, hospitality, delegate affairs, and technical infrastructure.",
+      "image": "/assets/real/core-and-associate-team.jpg",
+      "thumb": "/assets/real/thumbs/core-and-associate-team.jpg",
+      "tag": "SECRETARIAT BOARD",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-05",
+      "title": "Distinguished Faculty Advisory Board",
+      "caption": "Honored faculty advisors and institutional dignitaries from Dwarkadas J. Sanghvi College of Engineering mentoring the society.",
+      "image": "/assets/real/faculty-advisors.jpg",
+      "thumb": "/assets/real/thumbs/faculty-advisors.jpg",
+      "tag": "INSTITUTIONAL PATRONS",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-06",
+      "title": "Executive Board & Committee Chairs Felicitation",
+      "caption": "Presidents, Chairpersons, and Directors honored on stage for steering substantive debate across councils.",
+      "image": "/assets/real/executive-board-felicitation.jpg",
+      "thumb": "/assets/real/thumbs/executive-board-felicitation.jpg",
+      "tag": "EXECUTIVE BOARD",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-07",
+      "title": "Best Delegation National Champions",
+      "caption": "Triumphant delegations celebrating on stage with the coveted Best Delegation Trophy and certificates of excellence.",
+      "image": "/assets/real/delegation-winners.jpg",
+      "thumb": "/assets/real/thumbs/delegation-winners.jpg",
+      "tag": "VALEDICTORY & HONORS",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-08",
+      "title": "Best Delegate Gavel Presentation",
+      "caption": "Best Delegate gavel presentation celebrating exceptional oratory, diplomacy, and crisis resolution.",
+      "image": "/assets/real/best-delegate-gavel.jpg",
+      "thumb": "/assets/real/thumbs/best-delegate-gavel.jpg",
+      "tag": "VALEDICTORY & HONORS",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-09",
+      "title": "Best Delegate Honored by Faculty Dignitaries",
+      "caption": "Academic and parliamentary excellence recognized alongside esteemed faculty advisors.",
+      "image": "/assets/real/best-delegate-faculty.jpg",
+      "thumb": "/assets/real/thumbs/best-delegate-faculty.jpg",
+      "tag": "VALEDICTORY & HONORS",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-10",
+      "title": "Chamber Deliberations & Delegate Caucusing",
+      "caption": "Delegates engaging in unmoderated caucus negotiations, building coalitions and drafting treaty clauses.",
+      "image": "/assets/real/committee-session-1.jpg",
+      "thumb": "/assets/real/thumbs/committee-session-1.jpg",
+      "tag": "COMMITTEE PROCEEDINGS",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-11",
+      "title": "Parliamentary Debate & Formal Speeches",
+      "caption": "An envoy delivering an impassioned policy address from the General Speakers List before the assembly.",
+      "image": "/assets/real/committee-session-2.jpg",
+      "thumb": "/assets/real/thumbs/committee-session-2.jpg",
+      "tag": "COMMITTEE PROCEEDINGS",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-12",
+      "title": "Placard Motion & Committee Floor",
+      "caption": "Delegates raising sovereign placards to introduce motions for moderated caucuses and procedural votes.",
+      "image": "/assets/real/committee-session-3.jpg",
+      "thumb": "/assets/real/thumbs/committee-session-3.jpg",
+      "tag": "COMMITTEE PROCEEDINGS",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-13",
+      "title": "Resolution Drafting & Multilateral Blocs",
+      "caption": "Sponsors and signatories intensely refining operative clauses during working paper consultations.",
+      "image": "/assets/real/committee-session-4.jpg",
+      "thumb": "/assets/real/thumbs/committee-session-4.jpg",
+      "tag": "COMMITTEE PROCEEDINGS",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-14",
+      "title": "Council Voting Procedure & Resolution Adoption",
+      "caption": "Substantive roll-call voting procedure concluding with formal adoption of the committee resolution.",
+      "image": "/assets/real/committee-session-5.jpg",
+      "thumb": "/assets/real/thumbs/committee-session-5.jpg",
+      "tag": "COMMITTEE PROCEEDINGS",
+      "aspect": "3/2"
+    }
+  ]
+}

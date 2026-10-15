@@ -1,0 +1,65 @@
+[
+  {
+    "id": "ach-01",
+    "year": "2026",
+    "conference": "HARVARD MUN INDIA",
+    "committee": "HISTORICAL SECURITY COUNCIL",
+    "award": "BEST DELEGATE",
+    "delegate": "Aarav Mehta & Siddharth Iyer [EDIT]",
+    "delegation": "PORTFOLIO: RUSSIAN FEDERATION"
+  },
+  {
+    "id": "ach-02",
+    "year": "2026",
+    "conference": "MUMBAI MUN 2026",
+    "committee": "DISARMAMENT & INT. SECURITY",
+    "award": "BEST DELEGATE",
+    "delegate": "Varun Singhania [EDIT]",
+    "delegation": "PORTFOLIO: ISRAEL"
+  },
+  {
+    "id": "ach-03",
+    "year": "2026",
+    "conference": "IIT BOMBAY MUN",
+    "committee": "UNITED NATIONS HUMAN RIGHTS COUNCIL",
+    "award": "HIGH COMMENDATION",
+    "delegate": "Rhea Merchant [EDIT]",
+    "delegation": "PORTFOLIO: IRAN"
+  },
+  {
+    "id": "ach-04",
+    "year": "2025",
+    "conference": "BOMBAY MODEL UNITED NATIONS",
+    "committee": "CONTINUOUS CRISIS COMMITTEE",
+    "award": "SPECIAL MENTION",
+    "delegate": "Zaid Merchant [EDIT]",
+    "delegation": "PORTFOLIO: DEFENCE MINISTER"
+  },
+  {
+    "id": "ach-05",
+    "year": "2025",
+    "conference": "BITS PILANI MUN",
+    "committee": "SPECIAL POLITICAL & DECOLONIZATION",
+    "award": "BEST DELEGATE",
+    "delegate": "Tanvi Shah [EDIT]",
+    "delegation": "PORTFOLIO: UNITED KINGDOM"
+  },
+  {
+    "id": "ach-06",
+    "year": "2025",
+    "conference": "DELHI UNIVERSITY DIPLOMATIC CONCLAVE",
+    "committee": "UNITED NATIONS SECURITY COUNCIL",
+    "award": "BEST DELEGATION (DELEGATION TROPHY)",
+    "delegate": "DJS MUNSOC CONTINGENT (12 DELEGATES)",
+    "delegation": "INSTITUTIONAL CONTINGENT AWARD"
+  },
+  {
+    "id": "ach-07",
+    "year": "2024",
+    "conference": "ROTARACT DISTRICT MUN",
+    "committee": "WORLD HEALTH ASSEMBLY",
+    "award": "BEST DELEGATE",
+    "delegate": "Ananya Sharma [EDIT]",
+    "delegation": "PORTFOLIO: BRAZIL"
+  }
+]
