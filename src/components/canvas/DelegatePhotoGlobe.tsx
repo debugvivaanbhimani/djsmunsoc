@@ -105,7 +105,7 @@ export default function DelegatePhotoGlobe({
       const delta = (time - lastTime.current) / 1000;
       lastTime.current = time;
       if (!isDragging.current && !hovered.current) {
-        setRotY((prev) => (prev + delta * 14) % 360);
+        setRotY((prev) => (prev + delta * 6) % 360);
       }
       animRef.current = requestAnimationFrame(loop);
     };
