@@ -105,7 +105,7 @@ export default function DelegatePhotoGlobe({
       const delta = (time - lastTime.current) / 1000;
       lastTime.current = time;
       if (!isDragging.current && !hovered.current) {
-        setRotY((prev) => (prev + delta * 6) % 360);
+        setRotY((prev) => (prev + delta * 8.5) % 360);
       }
       animRef.current = requestAnimationFrame(loop);
     };
@@ -146,9 +146,13 @@ export default function DelegatePhotoGlobe({
 
   // Project cards to 2D and sort by depth (painter's algorithm)
   const projected = useMemo(() => {
+    // Subtle circular orbital precession in synchronization with Y rotation
+    const orbitalTilt = Math.sin((rotY * Math.PI) / 180) * 8;
+    const effectiveRotX = rotX + orbitalTilt;
+
     return cards
       .map((card) => {
-        const rot = rotatePoint(card.x, card.y, card.z, rotX, rotY);
+        const rot = rotatePoint(card.x, card.y, card.z, effectiveRotX, rotY);
         const { sx, sy, scale } = project(rot.x, rot.y, rot.z, FOV);
         return { ...card, sx, sy, scale, depth: rot.z };
       })
