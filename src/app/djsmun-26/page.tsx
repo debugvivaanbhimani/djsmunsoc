@@ -13,8 +13,7 @@ const COMMITTEES = [
     level: "Advanced / Crisis",
     color: "#0B1930",
     agendas: [
-      "Evaluating Preemptive Sovereign Military Actions in Non-Contiguous Maritime Zones",
-      "Establishment of Demilitarized Verification Regimes in Contested Littoral Corridors",
+      "Regulation of Lethal Autonomous Weapon Systems and the Legal Implications of Foreign Military Interventions.",
     ],
     eb: [
       { role: "Chairperson", name: "Arya Nyayadhish" },
@@ -30,8 +29,7 @@ const COMMITTEES = [
     level: "Intermediate",
     color: "#1a3a6e",
     agendas: [
-      "Addressing Systematic Human Rights Violations in Conflict Zones Through International Accountability",
-      "Protecting the Rights of Internally Displaced Persons in Climate-Induced Migration",
+      "Deliberation on addressing human rights risks arising from forced and involuntary returns, including trafficking, exploitation, and failures in the reintegration of displaced and migrant populations.",
     ],
     eb: [
       { role: "Chairperson", name: "Divyaansh Singh" },
@@ -47,8 +45,7 @@ const COMMITTEES = [
     level: "Beginner / Intermediate",
     color: "#7c3d0f",
     agendas: [
-      "Deliberating Legislative Frameworks for Uniform Civil Code Implementation Across States",
-      "Addressing Electoral Bond Transparency and Political Finance Reform",
+      "Regulation of foreign investment and contributions in India, focusing on the FCRA Amendment to balance economic development, civil society, national sovereignty, and internal security.",
     ],
     eb: [
       { role: "Chairperson", name: "Anuj Shenoy" },
@@ -64,8 +61,7 @@ const COMMITTEES = [
     level: "Beginner",
     color: "#5c1a6e",
     agendas: [
-      "Achieving Economic Empowerment and Financial Inclusion for Women in Developing Economies",
-      "Combating Gender-Based Violence in Digital Spaces and Social Media Platforms",
+      "Addressing Restrictions on Women’s Bodily Autonomy, Access to Education, Employment, and Healthcare Under Authoritarian and Extremist Regimes.",
     ],
     eb: [
       { role: "Chairperson", name: "Rim Patil" },
@@ -129,11 +125,15 @@ function CommitteeFlipCard({ comm }: { comm: typeof COMMITTEES[0] }) {
           </div>
 
           <div className="space-y-4 flex-1 pt-3">
-            <div className="font-mono text-[10px] uppercase tracking-wider text-cream/60">SUBSTANTIVE AGENDAS</div>
+            <div className="font-mono text-[10px] uppercase tracking-wider text-cream/60">
+              {comm.agendas.length > 1 ? "SUBSTANTIVE AGENDAS" : "SUBSTANTIVE AGENDA"}
+            </div>
             {comm.agendas.map((ag, i) => (
               <div key={i} className="space-y-1">
-                <div className="font-mono text-[10px] text-gold font-bold">AGENDA {String(i + 1).padStart(2, "0")}</div>
-                <div className="text-xs text-white/90 leading-snug">{ag}</div>
+                {comm.agendas.length > 1 && (
+                  <div className="font-mono text-[10px] text-gold font-bold">AGENDA {String(i + 1).padStart(2, "0")}</div>
+                )}
+                <div className="text-xs text-white/95 leading-relaxed font-sans">{ag}</div>
               </div>
             ))}
 
