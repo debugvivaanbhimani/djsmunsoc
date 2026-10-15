@@ -77,7 +77,7 @@ function CommitteeFlipCard({ comm }: { comm: typeof COMMITTEES[0] }) {
 
   return (
     <div
-      className="perspective-1000 h-[460px] w-full cursor-pointer select-none"
+      className="perspective-1000 h-[410px] w-full cursor-pointer select-none"
       onClick={() => setFlipped(!flipped)}
     >
       <div
@@ -86,7 +86,7 @@ function CommitteeFlipCard({ comm }: { comm: typeof COMMITTEES[0] }) {
       >
         {/* FRONT */}
         <div className="absolute inset-0 backface-hidden rounded-2xl overflow-hidden card-clean flex flex-col justify-between group bg-white border border-slate-200">
-          <div className="relative h-56 w-full bg-slate-100 overflow-hidden">
+          <div className="relative h-52 w-full bg-slate-100 overflow-hidden">
             <Image
               src={comm.image}
               alt={comm.code}
@@ -96,16 +96,15 @@ function CommitteeFlipCard({ comm }: { comm: typeof COMMITTEES[0] }) {
             />
           </div>
 
-          <div className="p-6 bg-white space-y-3 flex-1 flex flex-col justify-between">
-            <div className="space-y-1.5">
+          <div className="p-5 bg-white space-y-3 flex-1 flex flex-col justify-between">
+            <div className="space-y-1">
               <div className="flex items-center justify-end text-[10px] font-mono text-slate-400 font-bold">
                 <span className="flex items-center gap-1">
                   TAP TO FLIP <RotateCw className="w-3 h-3 text-slate-400" />
                 </span>
               </div>
               <h3 className="font-serif text-3xl sm:text-4xl font-bold text-navy tracking-tight">{comm.code}</h3>
-              <p className="font-mono text-xs uppercase tracking-wider text-slate-700 font-semibold">{comm.fullName}</p>
-              <p className="text-xs text-slate-600 leading-relaxed line-clamp-2 pt-1">{comm.desc}</p>
+              <p className="font-mono text-xs uppercase tracking-wider text-slate-700 font-semibold leading-snug">{comm.fullName}</p>
             </div>
             <div className="pt-3 border-t border-slate-100 text-[11px] font-mono text-navy font-bold uppercase tracking-wider flex items-center justify-between group-hover:text-gold transition-colors">
               <span>View Agendas & Executive Board</span>
