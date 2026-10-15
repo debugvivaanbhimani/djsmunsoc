@@ -132,9 +132,9 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Text Block — Order 2 on mobile (below globe), Order 1 on laptop (left) */}
           <div className="order-2 lg:order-1 lg:col-span-6 space-y-6">
-            <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold text-navy tracking-tight leading-[1.05]">
+            <h1 className="font-syne text-6xl sm:text-7xl md:text-8xl lg:text-[5.5rem] xl:text-[6.5rem] font-extrabold text-navy tracking-[-0.035em] leading-[0.92]">
               Debate. <br />
-              <span className="text-gold italic font-semibold">Dissent.</span> <br />
+              <span className="text-gold">Dissent.</span> <br />
               Discussion.
             </h1>
 

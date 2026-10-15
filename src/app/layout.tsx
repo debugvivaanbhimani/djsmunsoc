@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Newsreader, JetBrains_Mono } from "next/font/google";
+import { Inter, Newsreader, JetBrains_Mono, Syne, Cinzel } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/common/Navigation";
 import Footer from "@/components/common/Footer";
@@ -23,6 +23,20 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-mono",
   subsets: ["latin"],
   weight: ["400", "500"],
+  display: "swap",
+});
+
+const syne = Syne({
+  variable: "--font-syne",
+  subsets: ["latin"],
+  weight: ["700", "800"],
+  display: "swap",
+});
+
+const cinzel = Cinzel({
+  variable: "--font-cinzel",
+  subsets: ["latin"],
+  weight: ["700", "800", "900"],
   display: "swap",
 });
 
@@ -58,7 +72,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${newsreader.variable} ${jetbrainsMono.variable} scroll-smooth`}
+      className={`${inter.variable} ${newsreader.variable} ${jetbrainsMono.variable} ${syne.variable} ${cinzel.variable} scroll-smooth`}
     >
       <body className="bg-cream text-slate-800 antialiased min-h-screen selection:bg-gold selection:text-navy flex flex-col justify-between">
         <Navigation />
