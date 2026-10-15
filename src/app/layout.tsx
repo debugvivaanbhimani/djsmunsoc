@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Newsreader, JetBrains_Mono, Cinzel } from "next/font/google";
+import { Inter, Newsreader, Plus_Jakarta_Sans, Cinzel } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/common/Navigation";
 import Footer from "@/components/common/Footer";
@@ -19,10 +19,10 @@ const newsreader = Newsreader({
   display: "swap",
 });
 
-const jetbrainsMono = JetBrains_Mono({
+const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-mono",
   subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: ["500", "600", "700", "800"],
   display: "swap",
 });
 
@@ -65,7 +65,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${newsreader.variable} ${jetbrainsMono.variable} ${cinzel.variable} scroll-smooth`}
+      className={`${inter.variable} ${newsreader.variable} ${plusJakartaSans.variable} ${cinzel.variable} scroll-smooth`}
     >
       <body className="bg-cream text-slate-800 antialiased min-h-screen selection:bg-gold selection:text-navy flex flex-col justify-between">
         <Navigation />
