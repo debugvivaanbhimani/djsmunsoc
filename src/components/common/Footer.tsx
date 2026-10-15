@@ -33,14 +33,24 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 border-b border-slate-200 pb-12">
           {/* Brand Column */}
           <div className="md:col-span-5 space-y-4">
-            <div className="relative h-10 w-52">
-              <Image
-                src="/djs-munsoc-logo.png"
-                alt="DJS MUNSOC"
-                fill
-                unoptimized
-                className="object-contain object-left"
-              />
+            <div className="flex items-center gap-3">
+              <div className="relative w-11 h-11 shrink-0">
+                <Image
+                  src="/assets/logo/emblem-navy.png"
+                  alt="DJS MUNSOC"
+                  fill
+                  unoptimized
+                  className="object-contain"
+                />
+              </div>
+              <div className="flex flex-col">
+                <span className="font-serif text-xl font-bold tracking-tight text-navy leading-none">
+                  DJS MUNSoc
+                </span>
+                <span className="font-mono text-[9px] uppercase tracking-[0.18em] text-slate-500 font-semibold leading-tight mt-0.5">
+                  Dwarkadas J. Sanghvi College of Engineering
+                </span>
+              </div>
             </div>
             <p className="text-sm text-slate-600 leading-relaxed max-w-sm">
               The Model United Nations Society of Dwarkadas J. Sanghvi College of Engineering, Mumbai. Fostering diplomatic rigour, informed dissent, and responsible leadership since 2013.
