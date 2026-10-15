@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {
-  ArrowUpRight, Calendar, Trophy, RefreshCw,
+  ArrowUpRight, Trophy, RefreshCw,
   ChevronRight, CheckCircle2, Users, Globe2
 } from "lucide-react";
 import DelegatePhotoGlobe from "@/components/canvas/DelegatePhotoGlobe";
@@ -156,24 +156,6 @@ export default function HomePage() {
               >
                 All Conferences
               </Link>
-            </div>
-
-            {/* DJSMUN '26 concluded note */}
-            <div className="pt-4 border-t border-slate-200/80">
-              <div className="flex items-start gap-3">
-                <Calendar className="w-5 h-5 text-gold shrink-0 mt-0.5" />
-                <div>
-                  <div className="text-xs font-mono uppercase tracking-wider text-navy font-bold">
-                    DJSMUN '26 — 4th Flagship Edition
-                  </div>
-                  <div className="text-xs text-slate-500 mt-0.5">
-                    3rd – 4th October 2026 · DJSCE Campus, Mumbai
-                    <span className="ml-2 font-mono text-[10px] font-bold text-gold uppercase tracking-wider">
-                      · CONCLUDED
-                    </span>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 
