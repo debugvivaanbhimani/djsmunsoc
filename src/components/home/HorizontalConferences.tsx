@@ -115,8 +115,8 @@ export default function HorizontalConferences() {
             <div className="rounded-2xl bg-white border border-navy/10 p-8 shadow-xl space-y-6 flex-1 flex flex-col justify-between group">
               <div className="space-y-4">
                 <div className="flex items-center justify-between font-mono text-xs font-bold">
-                  <span className="rounded-full bg-amber-100 text-amber-800 px-3 py-1">
-                    UPCOMING CONCLAVE
+                  <span className="rounded-full bg-slate-100 text-slate-700 px-3 py-1">
+                    CONCLUDED
                   </span>
                   <span className="text-slate">2026 EDITION</span>
                 </div>
