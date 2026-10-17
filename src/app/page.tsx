@@ -162,7 +162,7 @@ export default function HomePage() {
           {/* Right Billboard Globe — Order 1 on mobile (on top), Order 2 on laptop (right) */}
           <div className="order-1 lg:order-2 lg:col-span-6 relative flex items-center justify-center overflow-visible w-full scale-[0.78] sm:scale-90 md:scale-100 -my-6 sm:my-0">
             <DelegatePhotoGlobe
-              photos={galleryData.items}
+              photos={galleryData.items.filter((photo) => !photo.image.includes("faculty-advisor"))}
               onSelectPhoto={(photo) => setSelectedPhoto(photo)}
             />
           </div>
