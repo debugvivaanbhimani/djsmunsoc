@@ -23,7 +23,7 @@ export default function SecretariatPage() {
       {/* Page Header */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-4 mb-16">
         <div className="font-mono text-xs uppercase tracking-[0.2em] text-gold font-bold">
-          EXECUTIVE LEADERSHIP · 2026–2027
+          EXECUTIVE LEADERSHIP · 2026 TO 2027
         </div>
         <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-navy tracking-tight">
           The Executive Secretariat
@@ -56,7 +56,7 @@ export default function SecretariatPage() {
           </div>
         </div>
 
-        {/* Secretary-General Feature Card */}
+        {/* Secretary General Feature Card */}
         {secGen && (
           <div className="card-clean p-8 sm:p-12 overflow-hidden border-l-4 border-l-gold">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
@@ -79,7 +79,7 @@ export default function SecretariatPage() {
               <div className="md:col-span-8 space-y-5">
                 <div className="space-y-1">
                   <h2 className="font-serif text-3xl sm:text-4xl font-bold text-navy">
-                    Dispatch from the Secretary-General
+                    Dispatch from the Secretary General
                   </h2>
                 </div>
 
@@ -148,29 +148,93 @@ export default function SecretariatPage() {
           </div>
         </div>
 
-        {/* Distinguished Faculty Advisory Board */}
-        <div className="card-clean p-8 sm:p-12 overflow-hidden border-l-4 border-l-navy bg-white">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-            <div className="md:col-span-5 relative h-72 sm:h-84 rounded-2xl overflow-hidden border-2 border-slate-100 shadow-md">
-              <Image
-                src="/assets/real/faculty-advisors.jpg"
-                alt="Faculty Advisors of DJS MUNSOC"
-                fill
-                unoptimized
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent" />
-              <div className="absolute bottom-3 left-4 right-4 text-white">
-                <div className="font-serif text-lg font-bold">DJSCE Faculty Advisory Board</div>
+        {/* Institutional Leadership and Faculty Advisory */}
+        <div className="space-y-8">
+          <div className="border-b border-slate-200 pb-4">
+            <div className="font-mono text-xs uppercase tracking-[0.2em] text-gold font-bold mb-1">
+              INSTITUTIONAL PATRONAGE AND MENTORSHIP
+            </div>
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-navy tracking-tight">
+              College Leadership and Faculty Advisory
+            </h2>
+            <p className="text-sm text-slate-600 max-w-3xl mt-2 leading-relaxed">
+              Operating under the administrative leadership of our Principal and the guidance of our Faculty Advisor, DJS MUNSOC upholds academic rigor, diplomatic decorum, and collegiate integrity across all conferences and delegations.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Principal Card */}
+            <div className="card-clean p-8 sm:p-10 bg-white border-t-4 border-t-navy flex flex-col justify-between shadow-sm">
+              <div className="space-y-6">
+                <div className="relative h-80 sm:h-96 w-full rounded-2xl overflow-hidden border border-slate-200 bg-slate-100 shadow-xs">
+                  <Image
+                    src="/assets/real/faculty-advisors.jpg"
+                    alt="Dr. Hari Vasudevan, Principal of DJSCE"
+                    fill
+                    unoptimized
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy/85 via-navy/20 to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4 text-white space-y-0.5">
+                    <span className="font-mono text-[10px] uppercase tracking-wider text-gold font-semibold">
+                      COLLEGE PRINCIPAL
+                    </span>
+                    <h3 className="font-serif text-2xl font-bold text-white">
+                      Dr. Hari Vasudevan
+                    </h3>
+                    <p className="text-xs text-slate-200">
+                      Principal, SVKM's Dwarkadas J. Sanghvi College of Engineering
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <div className="font-mono text-xs uppercase tracking-wider text-navy font-bold flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-gold" />
+                    <span>Principal</span>
+                  </div>
+                  <p className="text-sm text-slate-600 leading-relaxed font-sans">
+                    Guiding the institution with a commitment to academic distinction and holistic student development. Under his leadership, the college provides sustained encouragement and infrastructure to student initiatives, enabling DJS MUNSOC to achieve recognition across national collegiate circuits.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="md:col-span-7 space-y-4">
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-navy tracking-tight">
-                Guided by Academic Excellence
-              </h2>
-              <p className="text-sm text-slate-600 leading-relaxed">
-                The Model United Nations Society operates under the steadfast guidance and mentorship of distinguished faculty members of Dwarkadas J. Sanghvi College of Engineering. Their enduring patronage ensures institutional decorum, ethical stewardship, and academic excellence across all collegiate undertakings.
-              </p>
+
+            {/* Faculty Advisor Card */}
+            <div className="card-clean p-8 sm:p-10 bg-white border-t-4 border-t-gold flex flex-col justify-between shadow-sm">
+              <div className="space-y-6">
+                <div className="relative h-80 sm:h-96 w-full rounded-2xl overflow-hidden border border-slate-200 bg-slate-100 shadow-xs">
+                  <Image
+                    src="/assets/real/faculty-advisor-poonam.jpg"
+                    alt="Dr. Poonam Jadhav, Faculty Advisor of DJS MUNSOC"
+                    fill
+                    unoptimized
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy/85 via-navy/20 to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4 text-white space-y-0.5">
+                    <span className="font-mono text-[10px] uppercase tracking-wider text-gold font-semibold">
+                      FACULTY ADVISOR
+                    </span>
+                    <h3 className="font-serif text-2xl font-bold text-white">
+                      Dr. Poonam Jadhav
+                    </h3>
+                    <p className="text-xs text-slate-200">
+                      Faculty Advisor, Dwarkadas J. Sanghvi College of Engineering
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <div className="font-mono text-xs uppercase tracking-wider text-navy font-bold flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-gold" />
+                    <span>Faculty Advisor</span>
+                  </div>
+                  <p className="text-sm text-slate-600 leading-relaxed font-sans">
+                    Mentoring the student secretariat across event administration, institutional protocols, and delegate preparation. Dr. Poonam Jadhav provides continuous support to ensure every edition of DJSMUN maintains exemplary procedural standards and an enriching experience for all participants.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -183,7 +247,7 @@ export default function SecretariatPage() {
                 Core & Associate Organizing Committee
               </h2>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Behind every smooth-running committee session, precision-timed crisis injection, and hospitality arrangement stands our dedicated cohort of core and associate members. From logistics, hospitality, delegate registrations, and audio-visual command to design and public relations, they form the operational backbone of DJS MUNSOC.
+                Behind every smooth running committee session, precision timed crisis injection, and hospitality arrangement stands our dedicated cohort of core and associate members. From logistics, hospitality, delegate registrations, and audio visual command to design and public relations, they form the operational backbone of DJS MUNSOC.
               </p>
               <div className="pt-2 flex items-center gap-4 font-mono text-xs text-slate-500">
                 <div className="flex items-center gap-1.5 font-bold text-navy">
@@ -259,7 +323,7 @@ export default function SecretariatPage() {
                 href={sponsorsData.deckUrl}
                 onClick={(e) => {
                   e.preventDefault();
-                  alert("Official DJS MUNSOC 2026-27 Partnership Prospectus will be downloaded.");
+                  alert("Official DJS MUNSOC 2026 2027 Partnership Prospectus will be downloaded.");
                 }}
                 className="inline-flex items-center gap-2 rounded-xl bg-navy px-6 py-3 text-xs font-bold uppercase tracking-wider text-white shadow-sm hover:bg-navy-light transition-all"
               >

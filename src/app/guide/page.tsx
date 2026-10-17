@@ -25,14 +25,14 @@ const STEPS = [
   },
   {
     num: "02",
-    title: "Rules of Procedure & Caucus Dynamics",
+    title: "Rules of Procedure and Caucus Dynamics",
     image: "/assets/real/committee-session-1.jpg",
-    imageCaption: "Cross-bloc unmoderated negotiations and coalition consultations in action.",
+    imageCaption: "Cross bloc unmoderated negotiations and coalition consultations in action.",
     summary:
       "Debate proceeds under structured rules of procedure governed by motions raised by delegates from the floor.",
     details: [
       "General Speakers List (GSL): The primary default debate forum where nations deliver broad opening policy speeches.",
-      "Moderated Caucus: A focused, timed round of short speeches addressing a specific sub-issue (e.g. 10 minutes total, 60 seconds per speaker).",
+      "Moderated Caucus: A focused, timed round of short speeches addressing a specific sub issue (e.g. 10 minutes total, 60 seconds per speaker).",
       "Unmoderated Caucus: Informal suspension of rules allowing delegates to walk around, negotiate blocs, and author working papers.",
     ],
     term: {
@@ -42,32 +42,32 @@ const STEPS = [
   },
   {
     num: "03",
-    title: "Drafting Position Papers & Resolutions",
+    title: "Drafting Position Papers and Resolutions",
     image: "/assets/real/committee-session-4.jpg",
     imageCaption: "Delegates collaborating on clauses and sponsor directives during working paper drafting.",
     summary:
       "Concrete solutions are articulated through formal documents presented to the Executive Board and the chamber.",
     details: [
-      "Position Paper: A one to two-page policy briefing submitted prior to conference detailing your nation's historical stance and proposed solutions.",
+      "Position Paper: A one to two page policy briefing submitted prior to conference detailing your nation's historical stance and proposed solutions.",
       "Working Paper: Informal compilation of ideas, clauses, and policy directions authored during unmoderated caucuses.",
       "Draft Resolution: A formally sponsored document containing preambulatory clauses (context) and numbered operative clauses (actions).",
     ],
     term: {
       title: "Operative Clauses",
-      definition: "Action-oriented clauses beginning with verbs (e.g. 'Urges', 'Authorizes', 'Establishes') directing concrete multilateral policy.",
+      definition: "Action oriented clauses beginning with verbs (e.g. 'Urges', 'Authorizes', 'Establishes') directing concrete multilateral policy.",
     },
   },
   {
     num: "04",
-    title: "Conference Etiquette, Formals & Dress Code",
+    title: "Conference Etiquette, Formals and Dress Code",
     image: "/assets/real/best-delegate-gavel.jpg",
-    imageCaption: "Western & Indian business formals worn with stately diplomatic decorum.",
+    imageCaption: "Western and Indian business formals worn with stately diplomatic decorum.",
     summary:
       "A prestigious summit requires professional decorum, respect for the Executive Board, and sharp presentation.",
     details: [
       "Western Business Formals: Suits, blazers, formal trousers, formal shirts, neckties, formal skirts or dresses, and formal shoes.",
-      "Indian Traditional Formals: Bandhgala suits, Nehru jackets, crisp kurta-pajamas with formal jackets, sarees, or formal salwar suits.",
-      "Points of Order & Inquiries: Respectfully raised when committee procedural rules are violated or for clarification from the chair.",
+      "Indian Traditional Formals: Bandhgala suits, Nehru jackets, crisp kurta pajamas with formal jackets, sarees, or formal salwar suits.",
+      "Points of Order and Inquiries: Respectfully raised when committee procedural rules are violated or for clarification from the chair.",
     ],
     term: {
       title: "Point of Order",
@@ -95,10 +95,10 @@ const GLOSSARY = [
   },
   {
     term: "Signatory vs Sponsor",
-    desc: "A Sponsor co-authored the resolution; a Signatory simply wants to see the paper brought to the floor for debate.",
+    desc: "A Sponsor co authored the resolution; a Signatory simply wants to see the paper brought to the floor for debate.",
   },
   {
-    term: "Roll-Call Vote",
+    term: "Roll Call Vote",
     desc: "A formal vote where each nation is called alphabetically and votes 'In Favor', 'Against', or 'Abstain'.",
   },
 ];
@@ -164,7 +164,7 @@ export default function DelegateGuidePage() {
                 Download Official MUN Handbook
               </h4>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Includes sample position papers, resolution templates, and motion quick-reference cards.
+                Includes sample position papers, resolution templates, and motion quick reference cards.
               </p>
               <a
                 href="#download"

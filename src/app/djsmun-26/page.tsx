@@ -51,7 +51,7 @@ const COMMITTEES = [
       { role: "Chairperson", name: "Anuj Shenoy" },
       { role: "Vice Chairperson", name: "Rudra Joshi" },
     ],
-    desc: "A dynamic Indian parliamentary committee simulating cross-party deliberations, coalition negotiations, and domestic policy resolutions.",
+    desc: "A dynamic Indian parliamentary committee simulating cross party deliberations, coalition negotiations, and domestic policy resolutions.",
     image: "/assets/real/delegate-iran-unsc.jpg",
   },
   {
@@ -67,7 +67,7 @@ const COMMITTEES = [
       { role: "Chairperson", name: "Rim Patil" },
       { role: "Vice Chairperson", name: "Avanti Shirkande" },
     ],
-    desc: "Dedicated to gender equality and the empowerment of women worldwide, drafting binding resolutions across socio-economic and political domains.",
+    desc: "Dedicated to gender equality and the empowerment of women worldwide, drafting binding resolutions across socioeconomic and political domains.",
     image: "/assets/real/unsc-session-2.jpg",
   },
 ];
@@ -198,13 +198,13 @@ export default function DJSMUN26Page() {
               "Navigating the Multipolar Order"
             </p>
             <p className="text-sm sm:text-base text-white/85 leading-relaxed font-sans">
-              The 4th flagship edition of DJSMUN, hosted at Dwarkadas J. Sanghvi College of Engineering, brought together delegates from across India for two days of high-intensity debate, coalition-building, and diplomatic resolution.
+              The 4th flagship edition of DJSMUN, hosted at Dwarkadas J. Sanghvi College of Engineering, brought together delegates from across India for two days of high intensity debate, coalition building, and diplomatic resolution.
             </p>
 
             <div className="flex flex-wrap items-center gap-6 font-mono text-xs text-white/70 pt-2">
               <div className="flex items-center gap-2">
                 <Calendar className="w-4 h-4 text-gold shrink-0" />
-                <span>3rd – 4th October 2026</span>
+                <span>3rd and 4th October 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-gold shrink-0" />
@@ -222,7 +222,7 @@ export default function DJSMUN26Page() {
             <div className="relative w-full max-w-[300px] sm:max-w-[340px] aspect-[954/1486] rounded-2xl overflow-hidden border-2 border-gold/40 shadow-2xl group transition-transform duration-300 hover:scale-[1.02]">
               <Image
                 src="/assets/real/djsmun26-cover.png"
-                alt="Official DJSMUN '26 Cover Page — Times of DJSMUN"
+                alt="Official DJSMUN '26 Cover Page: Times of DJSMUN"
                 fill
                 priority
                 unoptimized
@@ -280,12 +280,12 @@ export default function DJSMUN26Page() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { img: "/assets/real/unsc-session-1.jpg", cap: "Coalition-building during unmoderated caucuses in the UNSC" },
+              { img: "/assets/real/unsc-session-1.jpg", cap: "Coalition building during unmoderated caucuses in the UNSC" },
               { img: "/assets/real/delegate-iran-unsc-best.jpg", cap: "Delegate of Iran addressing the chamber from the floor" },
               { img: "/assets/real/delegate-netherlands-unsc.jpg", cap: "Delegates presenting operative clauses and working papers" },
               { img: "/assets/real/executive-board-felicitation.jpg", cap: "Executive Board Chairs felicitated at valedictory" },
               { img: "/assets/real/delegation-winners.jpg", cap: "Best Delegation champions on stage" },
-              { img: "/assets/real/best-delegate-faculty.jpg", cap: "Best Delegate honored alongside faculty advisors" },
+              { img: "/assets/real/best-delegate-faculty.jpg", cap: "Best Delegate honored alongside Principal Dr. Hari Vasudevan and Faculty Advisor Dr. Poonam Jadhav" },
             ].map((item, i) => (
               <div key={i} className="card-clean overflow-hidden group">
                 <div className="relative h-60 w-full overflow-hidden bg-slate-100">
@@ -323,7 +323,7 @@ export default function DJSMUN26Page() {
                 Best Delegation & Individual Gavels
               </h2>
               <p className="text-sm text-slate-600 leading-relaxed">
-                The valedictory ceremony at DJSMUN '26 honored outstanding diplomatic performance across all four chambers. Best Delegation trophies and individual gavels were awarded to delegates who demonstrated exceptional oratory, resolution-drafting, and crisis-navigation skills.
+                The valedictory ceremony at DJSMUN '26 honored outstanding diplomatic performance across all four chambers. Best Delegation trophies and individual gavels were awarded to delegates who demonstrated exceptional oratory, resolution drafting, and crisis navigation skills.
               </p>
               <Link
                 href="/gallery"

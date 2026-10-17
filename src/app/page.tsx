@@ -14,12 +14,12 @@ import galleryData from "../../data/gallery.json";
 // ─── QUIZ DATA ───────────────────────────────────────────────────────────────
 const QUIZ_QUESTIONS = [
   {
-    question: "A high-intensity geopolitical crisis erupts. What is your immediate instinct?",
+    question: "A high intensity geopolitical crisis erupts. What is your immediate instinct?",
     options: [
       { text: "Draft an emergency directive to reposition sovereign assets.", comm: "UNSC" },
       { text: "Rally regional blocs to author a draft resolution.", comm: "UNHRC" },
-      { text: "Analyze legal precedents and file a point-of-order.", comm: "AIPPM" },
-      { text: "Build cross-party coalitions and negotiate amendments.", comm: "UNW" },
+      { text: "Analyze legal precedents and file a point of order.", comm: "AIPPM" },
+      { text: "Build cross party coalitions and negotiate amendments.", comm: "UNW" },
     ],
   },
   {
@@ -36,25 +36,25 @@ const QUIZ_QUESTIONS = [
     options: [
       { text: "Factual accuracy and unyielding logical argumentation.", comm: "UNSC" },
       { text: "Persuasive speeches that shift undecided delegates.", comm: "UNHRC" },
-      { text: "Rapid rebuttals and parliamentary cross-examination.", comm: "AIPPM" },
+      { text: "Rapid rebuttals and parliamentary cross examination.", comm: "AIPPM" },
       { text: "Compassionate advocacy and coalition building.", comm: "UNW" },
     ],
   },
   {
     question: "What debate pace suits you best?",
     options: [
-      { text: "Fast-moving crisis updates where directives change every 30 minutes.", comm: "UNSC" },
-      { text: "Structured debate on in-depth human rights frameworks.", comm: "UNHRC" },
-      { text: "Political horse-trading with rival party blocs.", comm: "AIPPM" },
-      { text: "Methodical resolution writing with consensus-building.", comm: "UNW" },
+      { text: "Fast moving crisis updates where directives change every 30 minutes.", comm: "UNSC" },
+      { text: "Structured debate on in depth human rights frameworks.", comm: "UNHRC" },
+      { text: "Political negotiations with rival party blocs.", comm: "AIPPM" },
+      { text: "Methodical resolution writing with consensus building.", comm: "UNW" },
     ],
   },
   {
     question: "What is your collegiate MUN experience level?",
     options: [
-      { text: "First-timer seeking a welcoming beginner environment.", comm: "UNW" },
+      { text: "First time delegate seeking a welcoming beginner environment.", comm: "UNW" },
       { text: "Intermediate delegate ready for intense diplomacy.", comm: "UNHRC" },
-      { text: "Experienced debater looking for high-stakes crisis.", comm: "UNSC" },
+      { text: "Experienced debater looking for high stakes crisis.", comm: "UNSC" },
       { text: "Political enthusiast comfortable with domestic debates.", comm: "AIPPM" },
     ],
   },
@@ -77,7 +77,7 @@ const RECOMMENDATIONS: Record<string, { code: string; name: string; level: strin
     code: "AIPPM",
     name: "All India Political Parties Meet",
     level: "Beginner / Intermediate",
-    desc: "You are a political strategist. You understand domestic coalition dynamics, legislative trade-offs, and cross-party negotiations.",
+    desc: "You are a political strategist. You understand domestic coalition dynamics, legislative tradeoffs, and cross party negotiations.",
   },
   UNW: {
     code: "UNW",
@@ -88,7 +88,7 @@ const RECOMMENDATIONS: Record<string, { code: string; name: string; level: strin
 };
 
 const HIGHLIGHT_PHOTOS = [
-  { img: "/assets/real/unsc-session-1.jpg", caption: "High-intensity unmoderated caucus debate in UNSC", title: "UNSC in Session" },
+  { img: "/assets/real/unsc-session-1.jpg", caption: "High intensity unmoderated caucus debate in UNSC", title: "UNSC in Session" },
   { img: "/assets/real/delegate-iran-unsc-best.jpg", caption: "Delegate of Iran addressing the council floor", title: "Sovereign Floor Speeches" },
   { img: "/assets/real/delegation-winners.jpg", caption: "National delegation champions receiving trophies", title: "Best Delegation Champions" },
   { img: "/assets/real/executive-board-felicitation.jpg", caption: "Executive Board chairs honored at the valedictory", title: "Executive Board Felicitation" },
@@ -96,7 +96,7 @@ const HIGHLIGHT_PHOTOS = [
   { img: "/assets/real/best-delegate-gavel.jpg", caption: "Individual gavel presentation ceremony", title: "Best Delegate Gavel" },
   { img: "/assets/real/organizing-committee.jpg", caption: "Student organizers managing summit operations", title: "Organizing Committee" },
   { img: "/assets/real/secretariat-team.jpg", caption: "The central governing secretariat of DJS MUNSOC", title: "Executive Secretariat" },
-  { img: "/assets/real/best-delegate-faculty.jpg", caption: "Faculty advisors and institutional leadership", title: "Faculty Mentorship" },
+  { img: "/assets/real/best-delegate-faculty.jpg", caption: "Principal Dr. Hari Vasudevan and Faculty Advisor Dr. Poonam Jadhav mentoring delegates", title: "Faculty Mentorship" },
   { img: "/assets/real/unsc-session-2.jpg", caption: "Emergency directive deliberations in committee", title: "Chamber Interventions" },
 ];
 
@@ -186,6 +186,76 @@ export default function HomePage() {
                 <div className="font-mono text-xs uppercase tracking-wider text-slate-300">{s.label}</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── ABOUT MUN, VISION AND MISSION ─────────────────────────────────── */}
+      <section className="bg-cream py-20 border-b border-slate-200">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-12">
+          {/* Header & Dedicated Paragraph on MUN */}
+          <div className="max-w-3xl space-y-4">
+            <div className="font-mono text-xs uppercase tracking-[0.2em] text-gold font-bold">
+              ABOUT MODEL UNITED NATIONS · DWARKADAS J. SANGHVI COLLEGE OF ENGINEERING
+            </div>
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-navy tracking-tight">
+              Fostering Diplomacy, Policy Acumen, and Global Leadership
+            </h2>
+            <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-sans pt-1">
+              Model United Nations is an authentic academic simulation of multilateral diplomacy where students assume the roles of international delegates to debate, negotiate, and formulate solutions for pressing global issues. Through rigorous committee proceedings, unmoderated caucuses, and resolution drafting, participants develop critical thinking, negotiation, and public speaking skills while engaging deeply with international law, human rights, and geopolitical strategy.
+            </p>
+          </div>
+
+          {/* Vision and Mission Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Vision */}
+            <div className="card-clean p-8 sm:p-10 bg-white border-l-4 border-l-gold space-y-4 shadow-sm">
+              <div className="flex items-center gap-2">
+                <span className="font-mono text-xs uppercase tracking-widest text-gold font-bold">
+                  OUR VISION
+                </span>
+              </div>
+              <h3 className="font-serif text-2xl font-bold text-navy">
+                Empowering Future Diplomatic Voices
+              </h3>
+              <p className="text-sm text-slate-600 leading-relaxed font-sans">
+                To establish DJS MUNSOC as a premier collegiate platform that inspires youth to evolve into empathetic global citizens, insightful thinkers, and principled leaders equipped to navigate international challenges through dialogue and consensus.
+              </p>
+            </div>
+
+            {/* Mission */}
+            <div className="card-clean p-8 sm:p-10 bg-white border-l-4 border-l-navy space-y-4 shadow-sm">
+              <div className="flex items-center gap-2">
+                <span className="font-mono text-xs uppercase tracking-widest text-navy font-bold">
+                  OUR MISSION
+                </span>
+              </div>
+              <h3 className="font-serif text-2xl font-bold text-navy">
+                Upholding Substantive Excellence
+              </h3>
+              <p className="text-sm text-slate-600 leading-relaxed font-sans">
+                To deliver intellectually rigorous simulations governed by parliamentary decorum, to encourage constructive dissent and comprehensive policy research, and to provide transformative opportunities for delegates across diverse academic disciplines under our core ethos: Debate, Dissent, Discussion.
+              </p>
+            </div>
+          </div>
+
+          {/* Institutional Leadership Banner */}
+          <div className="card-clean p-6 sm:p-8 bg-white border border-slate-200 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-6 shadow-xs">
+            <div className="space-y-1 max-w-2xl">
+              <div className="font-mono text-xs uppercase tracking-wider text-gold font-bold">
+                INSTITUTIONAL PATRONAGE AND GUIDANCE
+              </div>
+              <p className="text-sm text-slate-700 leading-relaxed">
+                Operating with the steadfast institutional support of <strong className="text-navy font-bold">Dr. Hari Vasudevan</strong> (Principal) and under the dedicated academic mentorship of <strong className="text-navy font-bold">Dr. Poonam Jadhav</strong> (Faculty Advisor).
+              </p>
+            </div>
+            <Link
+              href="/secretariat"
+              className="inline-flex items-center gap-2 rounded-xl border border-navy/20 bg-slate-50 px-5 py-2.5 text-xs font-mono font-bold uppercase tracking-wider text-navy hover:bg-navy hover:text-white transition-all shrink-0"
+            >
+              <span>Meet the Leadership</span>
+              <ArrowUpRight className="w-4 h-4 text-gold" />
+            </Link>
           </div>
         </div>
       </section>
@@ -294,14 +364,14 @@ export default function HomePage() {
               {
                 href: "/djsmun-26",
                 label: "DJSMUN '26",
-                sub: "4th Edition · Oct 3–4, 2026",
+                sub: "4th Edition · Oct 3 and 4, 2026",
                 desc: "Conference recap, 4 committee flip cards, photo archive, and honors.",
                 img: "/assets/real/unsc-session-1.jpg",
               },
               {
                 href: "/conferences",
                 label: "All Conferences",
-                sub: "2022 – 2026 editions",
+                sub: "2022 to 2026 editions",
                 desc: "Full history of DJSMUN flagship editions and Youth Summit conclaves.",
                 img: "/assets/real/unsc-session-2.jpg",
               },
@@ -309,14 +379,14 @@ export default function HomePage() {
                 href: "/secretariat",
                 label: "Secretariat",
                 sub: "Executive Leadership",
-                desc: "Meet the Secretary-General, Director-General, and the organizing team.",
+                desc: "Meet the Secretary General, Director General, and the organizing team.",
                 img: "/assets/real/secretariat-team.jpg",
               },
               {
                 href: "/gallery",
                 label: "Gallery",
                 sub: "Official Visual Archive",
-                desc: "High-res photography from DJSMUN '26 with fullscreen lightbox.",
+                desc: "High resolution photography from DJSMUN '26 with fullscreen lightbox.",
                 img: "/assets/real/delegation-winners.jpg",
               },
               {

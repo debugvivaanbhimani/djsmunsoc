@@ -56,11 +56,20 @@
     },
     {
       "id": "g-06",
-      "title": "Distinguished Faculty Advisory Board",
-      "caption": "Honored faculty advisors and institutional dignitaries from Dwarkadas J. Sanghvi College of Engineering mentoring the society.",
+      "title": "Principal Dr. Hari Vasudevan",
+      "caption": "Dr. Hari Vasudevan, Principal of Dwarkadas J. Sanghvi College of Engineering, providing institutional support and guidance to DJS MUNSOC.",
       "image": "/assets/real/faculty-advisors.jpg",
       "thumb": "/assets/real/thumbs/faculty-advisors.jpg",
-      "tag": "INSTITUTIONAL PATRONS",
+      "tag": "COLLEGE PRINCIPAL",
+      "aspect": "3/2"
+    },
+    {
+      "id": "g-06b",
+      "title": "Faculty Advisor Dr. Poonam Jadhav",
+      "caption": "Dr. Poonam Jadhav, Faculty Advisor of DJS MUNSOC, guiding the society across conferences, academic initiatives, and student delegations.",
+      "image": "/assets/real/faculty-advisor-poonam.jpg",
+      "thumb": "/assets/real/thumbs/faculty-advisor-poonam.jpg",
+      "tag": "FACULTY ADVISOR",
       "aspect": "3/2"
     },
     {
